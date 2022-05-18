@@ -58,7 +58,7 @@
                         </li>
                         <li>
                             <a href="">
-                            <h3>Cargar Servicios</h3>
+                                <h3>Cargar Servicios</h3>
                             </a>
                         </li>
                     </ul>
@@ -78,7 +78,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="pages/servicios.html">
+                    <a href="../pages/servicios.html">
                         <h3>Buscar Servicios</h3>
                     </a>
                 </li>
@@ -95,50 +95,54 @@
 
                 <form class="fondoForm">
                     <!--Comienza el Formulario-->
-                    <fieldset>
-                        <legend>Datos Personales:</legend>
+                    
+                        <fieldset>
+                            <legend>Datos Personales:</legend>
+                            <div class="columnForm">
+                            <label>Nombre:</label>
+                            <input type="text" placeholder="Nombre" name="Name" required />
+                            <label>Apellido:</label>
+                            <input type="text" placeholder="Apellido" name="surname" required />
 
-                        <label>Nombre:</label>
-                        <input type="text" placeholder="Nombre" name="Name" required />
-                        <label>Apellido:</label>
-                        <input type="text" placeholder="Apellido" name="surname" required /><br><br>
-
-                        <label>E-mail:</label>
-                        <input type="text" placeholder="Dirección de correo" name="email" required />
-                        <label>Teléfono:</label>
-                        <input type="text" placeholder="Telefono" name="phone" required /><br><br>
-                        <label>Tipo Servicio</label>
-                        <select name="service">
-                            <option value="Elec">Electricidad</option>
-                            <option value="Plom">Plomeria</option>
-                            <option value="Install">Instaladores</option>
-                            <option value="jard">Jardineria</option>
-                            <option value="cadeteria">Cadeteria</option>
-                            <option value="otro">Otros</option>
-                        </select>
-                        <label>Otro:</label>
-                        <input type="text" placeholder="Otro" name="other" required /><br><br>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Datos adicionales:</legend>
-                        <label>Dirección:</label>
-                        <input type="text" placeholder="Dirección" name="address" required />
-                        <label>Ciudad:</label>
-                        <input type="text" placeholder="Ciudad" name="city" />
-                        <label>Localidad:</label>
-                        <input type="text" placeholder="Localidad" name="state" /><br><br>
-                        <label>Provincia:</label>
-                        <input type="text" placeholder="Provincia" name="state" /><br><br>
-
-                        <label>información Adicional:</label>
-                        <div class="showondesktop"> <textarea name="comments" rows="5"
-                                cols="60">Escribe aqui</textarea><br>
+                            <label>E-mail:</label>
+                            <input type="text" placeholder="Dirección de correo" name="email" required />
+                            <label>Teléfono:</label>
+                            <input type="text" placeholder="Telefono" name="phone" required /><br><br>
+                            <label>Tipo Servicio</label>
+                            <select name="service">
+                                <option value="Elec">Electricidad</option>
+                                <option value="Plom">Plomeria</option>
+                                <option value="Install">Instaladores</option>
+                                <option value="jard">Jardineria</option>
+                                <option value="cadeteria">Cadeteria</option>
+                                <option value="otro">Otros</option>
+                            </select>
+                            <label>Otro:</label>
+                            <input type="text" placeholder="Otro" name="other" required /><br>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Datos adicionales:</legend>
+                            <div class="columnForm">
+                            <label>Dirección:</label>
+                            <input type="text" placeholder="Dirección" name="address" required />
+                            <label>Ciudad:</label>
+                            <input type="text" placeholder="Ciudad" name="city" />
+                            <label>Localidad:</label>
+                            <input type="text" placeholder="Localidad" name="state" /><br><br>
+                            <label>Provincia:</label>
+                            <input type="text" placeholder="Provincia" name="state" /><br><br>
                         </div>
+                            <label>información Adicional:</label>
+                            <div class="showondesktop"> <textarea name="comments" rows="5"
+                                    cols="60">Escribe aqui</textarea><br>
+                            </div>
 
-                        <div class="showonmobile"> <textarea name="comments" rows="5" cols="35">""</textarea><br> </div>
+                            <div class="showonmobile"> <textarea name="comments" rows="5" cols="35">""</textarea><br>
+                            </div>
+                            </textarea><br>
 
-                        </textarea><br>
-                    </fieldset>
+                        </fieldset>
 
                     <label>Aceptas los términos</label>
                     <input type="checkbox" name="acepta" value="1" required /><br><br>
