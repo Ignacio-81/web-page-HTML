@@ -16,7 +16,8 @@ html {
 body {
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: 1.8rem;
+    background-color: rgba(213, 213, 213, 0.888);
 }
 
 #contenedor {
