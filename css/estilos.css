@@ -29,6 +29,7 @@ body {
         "pie"
     ;
     grid-template-columns: 95%;
+    
 }
 
 header {
@@ -78,9 +79,9 @@ header img {
 
 header h1 {
     font-family: 'Fredoka One', cursive;
-    font-size: 2rem;
-    color: red;
-    background-color: white;
+    font-size: 3rem;
+    color: rgb(255, 89, 0);
+    background-color: whitesmoke;
     margin: auto;
 }
 
@@ -140,7 +141,7 @@ ul li:hover ul {
 footer ul {
     display: flex;
     gap: 5px;
-    background-color: white;
+    background-color: transparent;
     text-transform: uppercase;
 }
 
@@ -155,10 +156,124 @@ footer p {
     margin-right: 10px;
 }
 
-table tr {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 1px;
+form label {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+form input {
+    margin: 1px;
+}
+
+/*============================ Animacion para imagenes ==================*/
+.img-style:hover .caption {
+    opacity: 1;
+}
+
+.img-style:hover img {
+    opacity: 1;
+    transform: scale(1.25, 1.25);
+    -webkit-transform: scale(1.25, 1.25);
+    -moz-transform: scale(1.25, 1.25);
+    -ms-transform: scale(1.25, 1.25);
+    -o-transform: scale(1.25, 1.25);
+}
+
+
+.img-style img {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    z-index: 4;
+}
+
+
+.img-style .caption {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all 0.45s ease-in-out;
+    -moz-transition: all 0.45s ease-in-out;
+    -o-transition: all 0.45s ease-in-out;
+    -ms-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
+}
+
+.img-style img {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+/* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+@keyframes hvr-pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+.hvr-pulse-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-animation-name: hvr-pulse-grow;
+    animation-name: hvr-pulse-grow;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.line-1{
+    display: flex;
+    align-items:flex-start;
+    position:relative;
+    border-right: 2px solid rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 left;
+    justify-content: left;   
+}
+/* Animation */
+.anim-typewriter {
+    animation: typewriter 4s steps(25) 1s infinite normal both,
+        blinkTextCursor 500ms steps(10) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 6em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(0, 0, 0, 0.75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
 }
 
 /*==============================IDs=====================================*/
@@ -185,6 +300,21 @@ table tr {
 }
 
 /*=========================Clases========================================*/
+.columnForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.fondoForm {
+    background-color: rgb(146, 172, 182);
+    border: inset 10px rgb(113, 185, 163);
+    margin: 5px;
+}
+
 /*Clases para hacer "aparecer o desaparecer" cosas en las vistas*/
 .showonmobile {
     display: inherit;
@@ -209,7 +339,7 @@ table tr {
     }
 
     body {
-        font-size: 150%;
+        font-size: 180%;
     }
 
     header {
@@ -241,7 +371,7 @@ table tr {
     }
 
     header h1 {
-        font-size: 4rem;
+        font-size: 6rem;
     }
 
     #nosotros {
@@ -264,13 +394,11 @@ table tr {
         justify-items: center;
     }
 
-
     footer ul {
         gap: 15px;
         padding: 5px;
         margin-bottom: 0;
-        background-color: white;
-        text-transform: uppercase;
+
     }
 
     footer ul li {
@@ -281,6 +409,24 @@ table tr {
     footer p {
         font-family: Arial;
         margin-right: auto;
+    }
+
+    form label {
+        padding: 5px;
+    }
+
+    form input {
+        margin: 5px;
+    }
+
+    .boton_form--size {
+        font-size: 20px;
+    }
+
+    .columnForm {
+        display: block;
+
+
     }
 
     /*Clases para hacer "aparecer o desaparecer" cosas en las vistas*/
@@ -310,16 +456,11 @@ td {
     text-align: right;
 }
 
-.fondoForm {
-    background-color: rgb(146, 172, 182);
-    border: inset 10px rgb(113, 185, 163);
-    margin: 5px;
-    min-width: auto;
-}
+
 
 .fondoTabla {
     background-color: rgb(246, 244, 157);
     border: inset 10px rgb(214, 210, 138);
-    margin-bottom: 5px;
-    width: 98%;
+    margin-bottom: 3px;
+    width: 95%;
 }

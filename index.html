@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +15,7 @@
     <div id="conentedor">
         <!--Inicio Encabezado-->
         <header>
+            <!--<div class="encabezado_pie--fondo">-->
             <!--Encabezado y titulo-->
             <div>
                 <!--Imagen-->
@@ -29,6 +29,8 @@
                 <button name="login"> LogIn </button>
                 <button name="register"> Registrarse </button>
             </div>
+            <!--</div>-->
+
             <!--FIN Envabezao y Titulo-->
         </header>
         <hr>
@@ -98,19 +100,19 @@
             <h2>Top Servicios:</h2>
             <div id="topServicios">
                 <!--Fila General de Servicios-->
-                <div>
+                <div  class="img-style">
                     <!--Col 1-->
                     <img src="assets/img/cadete.jpg" alt="imgserv01" height="120" width="160" />
                 </div>
-                <div>
+                <div  class="img-style">
                     <!--Col 2-->
                     <img src="assets/img/pintor.jpg" alt="imgserv02" height="120" width="140" />
-                </div>
-                <div>
+                </div  >
+                <div class="img-style">
                     <!--Col 3-->
                     <img src="assets/img/jardineria.jpg" alt="imgserv03" height="120" width="120" />
                 </div>
-                <div>
+                <div  class="img-style">
                     <!--Col 4-->
                     <img src="assets/img/electricidad.jpg" alt="imgserv04" height="120" width="160" />
                 </div>
@@ -136,7 +138,7 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
-                <div id="textMision">
+                <div id="textMision" class="hvr-pulse-grow">
                     <!--Columna 2-->
                     <h3>Nuestra misión:</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque architecto, ab recusandae
@@ -149,28 +151,29 @@
             <hr>
             <!--FIN Quienes somos?-->
         </main>
-        <h2>Contacto:</h2>
+        <h2 class="line-1 anim-typewriter">Escribinos...</h2>
         <div id="contacto">
             <form class="fondoForm">
                 <!--Comienza el Formulario de Contacto-->
                 <fieldset>
                     <!--Se enmarcan los datos personales-->
                     <legend>Datos Personales:</legend>
-
-                    <label>Nombre:</label>
-                    <input type="text" placeholder="Nombre" name="Name" required />
-                    <label>Apellido:</label>
-                    <input type="text" placeholder="Nombre" name="Name" required /><br><br>
-
-                    <label>E-mail:</label>
-                    <input type="text" placeholder="Dirección de correo" name="email" required /><br><br>
+                    <div  class="columnForm">
+                        <label>Nombre:</label>
+                        <input type="text" placeholder="Nombre" name="Name" required />
+                        <label>Apellido:</label>
+                        <input type="text" placeholder="Nombre" name="Name" required />
+                        <label>E-mail:</label>
+                        <input type="text" placeholder="Dirección de correo" name="email" required />
+                    </div>
+                    <br>
                     <label>Proveedor</label>
                     <input type="radio" name="tipo" value="supplier" required />
                     <label>Cliente</label>
                     <input type="radio" name="tipo" value="client" required /><br>
 
                 </fieldset>
-
+                <br>
                 <label>Comentarios:</label><br>
                 <div class="showondesktop"> <textarea name="comments" rows="5" cols="60">Escribe aqui</textarea><br>
                 </div>
@@ -179,8 +182,10 @@
 
                 <label>Aceptas los términos</label>
                 <input type="checkbox" name="acepta" value="1" required /><br><br>
-                <input type="reset" value="Limpiar formulario" />
-                <input type="submit" value="Enviar" />
+                <div Class="boton_form--size">
+                    <input Class="boton_form--size" type="reset" value="Limpiar formulario" />
+                    <input Class="boton_form--size" type="submit" value="Enviar" />
+                </div>
             </form>
             <!--Fin Formulario-->
         </div>
@@ -194,7 +199,7 @@
                 <li><a href="">Facebook</a></li>
                 <li><a href="">Instagram</a></li>
             </ul>
-            
+
         </footer>
         <!-- Fin de footer -->
     </div>
