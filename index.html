@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Pal</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lobster&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="conentedor">
+        <!--Inicio Encabezado-->
+        <header>
+            <!--Encabezado y titulo-->
+            <div>
+                <!--Imagen-->
+                <a href="./index.html"><img src="assets/img/CircularEconomy_image.jpg" alt="logo" height="40"
+                        width="60" /></a>
+            </div>
+
+            <h1 class="flex_centrado">SERVICE PAL</h1>
+
+            <div class="boton_form--pos">
+                <button name="login"> LogIn </button>
+                <button name="register"> Registrarse </button>
+            </div>
+            <!--FIN Envabezao y Titulo-->
+        </header>
+        <hr>
+        <!--Menu de Navegación-->
+        <nav>
+            <!--INCIO menu standard-->
+            <ul class="showondesktop">
+                <!--lista sin orden-->
+                <li>
+                    <!--items de la lista-->
+                    <a href="">
+                        <h3>Inicio</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#posNosotros">
+                        <h3>Nosotros</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <h3>Servicios</h3>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="pages/servicios.html">
+                                <h3>Buscar Servicios</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pages/altaServicio.html">
+                                <h3>Cargar Servicios</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href=" #contacto">
+                        <h3>Contacto</h3>
+                    </a>
+                </li>
+            </ul>
+            <!--FIN menu standard-->
+            <!--INICIO Menu Mobile-->
+            <ul class="showonmobile">
+                <li>
+                    <a href="pages/servicios.html">
+                        <h3>Buscar Servicios</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/altaServicio.html">
+                        <h3>Cargar Servicios</h3>
+                    </a>
+                </li>
+            </ul>
+            <!--FIN menu mobile-->
+        </nav>
+        <!--FIN Menu de Navegación-->
+        <hr>
+
+        <!--Fin Encabezado-->
+        <div id=" posNosotros">
+        </div>
+        <!--Inicio cuerpo principal-->
+        <main>
+            <h2>Top Servicios:</h2>
+            <div id="topServicios">
+                <!--Fila General de Servicios-->
+                <div>
+                    <!--Col 1-->
+                    <img src="assets/img/cadete.jpg" alt="imgserv01" height="120" width="160" />
+                </div>
+                <div>
+                    <!--Col 2-->
+                    <img src="assets/img/pintor.jpg" alt="imgserv02" height="120" width="140" />
+                </div>
+                <div>
+                    <!--Col 3-->
+                    <img src="assets/img/jardineria.jpg" alt="imgserv03" height="120" width="120" />
+                </div>
+                <div>
+                    <!--Col 4-->
+                    <img src="assets/img/electricidad.jpg" alt="imgserv04" height="120" width="160" />
+                </div>
+
+            </div>
+            <hr>
+            <!-- Seccion Quienes somos?  -->
+            <h2>Nosotros / Que Hacemos :</h2>
+            <section id="nosotros">
+                <div class="showonmobile">
+                    <!--Columna 1 - Imagen-->
+                    <iframe width="320" height="200"
+                        src="https://www.youtube.com/embed/Aa1JTbs7DOA?list=PLKGMzxNFrwc4_-8DccVdXoZ0dEERZL5dR"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelersometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="showondesktop">
+                    <!--Columna 1 - Imagen-->
+                    <iframe width="640" height="480"
+                        src="https://www.youtube.com/embed/Aa1JTbs7DOA?list=PLKGMzxNFrwc4_-8DccVdXoZ0dEERZL5dR"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div id="textMision">
+                    <!--Columna 2-->
+                    <h3>Nuestra misión:</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque architecto, ab recusandae
+                        alias
+                        ducimus maiores quas in temporibus modi, tempora amet, consequuntur illo earum saepe.
+                        Voluptates
+                        quibusdam expedita consectetur pariatur.</p>
+                </div>
+            </section>
+            <hr>
+            <!--FIN Quienes somos?-->
+        </main>
+        <h2>Contacto:</h2>
+        <div id="contacto">
+            <form class="fondoForm">
+                <!--Comienza el Formulario de Contacto-->
+                <fieldset>
+                    <!--Se enmarcan los datos personales-->
+                    <legend>Datos Personales:</legend>
+
+                    <label>Nombre:</label>
+                    <input type="text" placeholder="Nombre" name="Name" required />
+                    <label>Apellido:</label>
+                    <input type="text" placeholder="Nombre" name="Name" required /><br><br>
+
+                    <label>E-mail:</label>
+                    <input type="text" placeholder="Dirección de correo" name="email" required /><br><br>
+                    <label>Proveedor</label>
+                    <input type="radio" name="tipo" value="supplier" required />
+                    <label>Cliente</label>
+                    <input type="radio" name="tipo" value="client" required /><br>
+
+                </fieldset>
+
+                <label>Comentarios:</label><br>
+                <div class="showondesktop"> <textarea name="comments" rows="5" cols="60">Escribe aqui</textarea><br>
+                </div>
+
+                <div class="showonmobile"> <textarea name="comments" rows="5" cols="35">""</textarea><br> </div>
+
+                <label>Aceptas los términos</label>
+                <input type="checkbox" name="acepta" value="1" required /><br><br>
+                <input type="reset" value="Limpiar formulario" />
+                <input type="submit" value="Enviar" />
+            </form>
+            <!--Fin Formulario-->
+        </div>
+        <hr>
+        <!--Fin cuerpo principal-->
+        <!-- inicio de footer -->
+        <footer>
+            <p>Todos los derechos reservados</p>
+            <ul>
+                <li><a href="">Preguntas</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Instagram</a></li>
+            </ul>
+            
+        </footer>
+        <!-- Fin de footer -->
+    </div>
+    <!--FIN Contenedor general-->
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alta Servicio</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lobster&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="conentedor">
+        <!--Inicio Encabezado-->
+        <header>
+            <!--Encabezado y titulo-->
+            <div>
+                <!--Imagen-->
+                <a href="../index.html"><img src="../assets/img/CircularEconomy_image.jpg" alt="logo" height="40"
+                        width="60" /></a>
+            </div>
+            <h1 class="flex_centrado">SERVICE PAL</h1>
+            <div class="boton_form--pos">
+                <button name="login"> LogIn </button>
+                <button name="register"> Registrarse </button>
+            </div>
+            <!--FIN Envabezao y Titulo-->
+        </header>
+        <hr>
+        <!--FIN Envabezao y Titulo-->
+        <!--Menu de Navegación-->
+        <nav>
+            <!--Lista con enlaces-->
+            <ul class="showondesktop">
+                <!--lista sin orden-->
+                <li>
+                    <!--items de la lista-->
+                    <a href="../index.html">
+                        <h3>Incio</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html#posNosotros">
+                        <h3>Nosotros</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <h3>Servicios</h3>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="servicios.html">
+                                <h3>Buscar Servicios</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            <h3>Cargar Servicios</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../index.html#contacto">
+                        <h3>Contacto</h3>
+                    </a>
+                </li>
+            </ul>
+            <!--FIN menu standard-->
+            <!--INICIO Menu Mobile-->
+            <ul class="showonmobile">
+                <li>
+                    <a href="../index.html">
+                        <h3>Incio</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/servicios.html">
+                        <h3>Buscar Servicios</h3>
+                    </a>
+                </li>
+            </ul>
+            <!--FIN menu mobile-->
+        </nav>
+        <!--FIN Menu de Navegación-->
+        <hr>
+        </header>
+
+        <main>
+            <h2>Alta Proveedor de Servicio:</h2>
+            <div>
+
+                <form class="fondoForm">
+                    <!--Comienza el Formulario-->
+                    <fieldset>
+                        <legend>Datos Personales:</legend>
+
+                        <label>Nombre:</label>
+                        <input type="text" placeholder="Nombre" name="Name" required />
+                        <label>Apellido:</label>
+                        <input type="text" placeholder="Apellido" name="surname" required /><br><br>
+
+                        <label>E-mail:</label>
+                        <input type="text" placeholder="Dirección de correo" name="email" required />
+                        <label>Teléfono:</label>
+                        <input type="text" placeholder="Telefono" name="phone" required /><br><br>
+                        <label>Tipo Servicio</label>
+                        <select name="service">
+                            <option value="Elec">Electricidad</option>
+                            <option value="Plom">Plomeria</option>
+                            <option value="Install">Instaladores</option>
+                            <option value="jard">Jardineria</option>
+                            <option value="cadeteria">Cadeteria</option>
+                            <option value="otro">Otros</option>
+                        </select>
+                        <label>Otro:</label>
+                        <input type="text" placeholder="Otro" name="other" required /><br><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datos adicionales:</legend>
+                        <label>Dirección:</label>
+                        <input type="text" placeholder="Dirección" name="address" required />
+                        <label>Ciudad:</label>
+                        <input type="text" placeholder="Ciudad" name="city" />
+                        <label>Localidad:</label>
+                        <input type="text" placeholder="Localidad" name="state" /><br><br>
+                        <label>Provincia:</label>
+                        <input type="text" placeholder="Provincia" name="state" /><br><br>
+
+                        <label>información Adicional:</label>
+                        <div class="showondesktop"> <textarea name="comments" rows="5"
+                                cols="60">Escribe aqui</textarea><br>
+                        </div>
+
+                        <div class="showonmobile"> <textarea name="comments" rows="5" cols="35">""</textarea><br> </div>
+
+                        </textarea><br>
+                    </fieldset>
+
+                    <label>Aceptas los términos</label>
+                    <input type="checkbox" name="acepta" value="1" required /><br><br>
+                    <div>
+                        <input type="submit" value="Enviar" />
+                        <input type="reset" value="Limpiar formulario" />
+                    </div>
+
+                </form>
+            </div>
+        </main>
+        <hr>
+        <!--Fin cuerpo principal-->
+        <!-- inicio de footer -->
+        <footer>
+            <p>Todos los derechos reservados</p>
+            <ul>
+                <li><a href="">Preguntas</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Instagram</a></li>
+            </ul>
+
+        </footer>
+        <!-- Fin de footer -->
+    </div>
+</body>
+
+</html>

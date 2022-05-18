@@ -1,0 +1,324 @@
+/*Css General Proyecto*/
+/*Aplicamos un reset General para el CSS*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1 rem = 10px*/
+}
+
+/* Los media queries van despues (de menor a mayor) */
+/* mobile first - customizado para 360px*/
+
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+#contenedor {
+    display: grid;
+    grid-template-areas:
+        "encabezado"
+        "navegacion"
+        "principal"
+        "pie"
+    ;
+    grid-template-columns: 95%;
+}
+
+header {
+    grid-area: encabezado;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../assets/img/header_img.jpg");
+    background-size: cover;
+    height: auto;
+    z-index: 1;
+    top: 0px;
+}
+
+main {
+    grid-area: principal;
+    padding: 5px;
+    display: flexbox;
+}
+
+footer {
+    grid-area: pie;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: 'Lobster', cursive;
+
+}
+
+h2 {
+    margin: 5px;
+    margin-top: 10px;
+
+    margin-bottom: 10px;
+}
+
+/* Estilo del Encabezado de Pagina */
+header img {
+    display: none;
+}
+
+header h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+    color: red;
+    background-color: white;
+    margin: auto;
+}
+
+
+
+/*Estilo de la lista de Menu de la pagina*/
+ul {
+    background-color: SteelBlue;
+    /*Saco los bullets o numeros de la lista*/
+    list-style: none;
+    padding: 0;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav>ul>li {
+    flex-grow: 1;
+    position: relative;
+    /* necesario para submenu */
+}
+
+nav ul a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial;
+    color: white;
+}
+
+ul ul {
+    position: absolute;
+    background-color: SteelBlue;
+    width: 100%;
+    display: none;
+}
+
+ul ul li {
+    background-color: rgb(37, 101, 152);
+}
+
+nav li:hover {
+    background-color: SkyBlue;
+
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+/*Fin estilo Menu Pagina*/
+
+/* Estilo del Pie de Pagina */
+footer ul {
+    display: flex;
+    gap: 5px;
+    background-color: white;
+    text-transform: uppercase;
+}
+
+footer ul li {
+    padding: 5px;
+    text-decoration: none;
+}
+
+footer p {
+    padding: 5px;
+    font-family: Arial;
+    margin-right: 10px;
+}
+
+table tr {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1px;
+}
+
+/*==============================IDs=====================================*/
+#nosotros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5px;
+    justify-content: center;
+}
+
+#textMision {
+    /* propiedades decorativas */
+    border: solid 5px rgb(117, 183, 117);
+    padding: 10px;
+
+}
+
+#topServicios {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+/*=========================Clases========================================*/
+/*Clases para hacer "aparecer o desaparecer" cosas en las vistas*/
+.showonmobile {
+    display: inherit;
+}
+
+.showondesktop {
+    display: none;
+}
+
+/* Tables, notebooks y escritorio */
+@media screen and (min-width: 768px) {
+
+    /* DESDE 1200px */
+    #contenedor {
+        grid-template-columns: 100%;
+        grid-template-rows: auto 300px minmax(400px, auto) 50px;
+        max-width: 1000px;
+        width: 100%;
+        margin: auto;
+        background: white;
+
+    }
+
+    body {
+        font-size: 150%;
+    }
+
+    header {
+        position: sticky;
+        flex-wrap: nowrap;
+        height: 90px;
+    }
+
+    nav {
+        position: sticky;
+        top: 90px;
+        z-index: 1;
+    }
+
+    main {
+        padding: 10px;
+        display: inline-block;
+    }
+
+    footer {
+
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header img {
+        display: flex;
+    }
+
+    header h1 {
+        font-size: 4rem;
+    }
+
+    #nosotros {
+        display: flex;
+        margin: 5px;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    #textMision {
+        /* propiedades decorativas */
+        margin-left: 10px;
+        overflow: auto;
+    }
+
+    #topServicios {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 10px;
+        justify-items: center;
+    }
+
+
+    footer ul {
+        gap: 15px;
+        padding: 5px;
+        margin-bottom: 0;
+        background-color: white;
+        text-transform: uppercase;
+    }
+
+    footer ul li {
+        padding: 5px;
+        text-decoration: none;
+    }
+
+    footer p {
+        font-family: Arial;
+        margin-right: auto;
+    }
+
+    /*Clases para hacer "aparecer o desaparecer" cosas en las vistas*/
+    .showonmobile {
+        display: none;
+    }
+
+    .showondesktop {
+        display: flex;
+    }
+}
+
+/*Damos estilo a las celdas de las tablas:*/
+td {
+    text-align: left;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/*------------------Clases------------------------------*/
+
+.boton_form--pos {
+    position: relative;
+    align-self: flex-end;
+    margin: 5px;
+    text-align: right;
+}
+
+.fondoForm {
+    background-color: rgb(146, 172, 182);
+    border: inset 10px rgb(113, 185, 163);
+    margin: 5px;
+    min-width: auto;
+}
+
+.fondoTabla {
+    background-color: rgb(246, 244, 157);
+    border: inset 10px rgb(214, 210, 138);
+    margin-bottom: 5px;
+    width: 98%;
+}
