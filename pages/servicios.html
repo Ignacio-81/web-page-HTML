@@ -54,7 +54,7 @@
                     <ul>
                         <li>
                             <a href="">
-                            <h3>Buscar Servicios</h3>
+                                <h3>Buscar Servicios</h3>
                             </a>
                         </li>
                         <li>
@@ -80,7 +80,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="pages/altaServicio.html">
+                    <a href="../pages/altaServicio.html">
                         <h3>Cargar Servicios</h3>
                     </a>
                 </li>
@@ -104,13 +104,15 @@
                     <option value="jard">Jardineria</option>
                     <option value="cadeteria">Cadeteria</option>
                     <option value="otro">Otros</option>
-                </select><br><br>
-                <label>Ciudad:</label>
-                <input type="text" placeholder="Ciudad" name="city" />
-                <label>Localidad:</label>
-                <input type="text" placeholder="Localidad" name="state" /><br><br>
-                <label>Provincia:</label>
-                <input type="text" placeholder="Provincia" name="state" /><br><br>
+                </select><br>
+                <div class="columnForm">
+                    <label>Ciudad:</label>
+                    <input type="text" placeholder="Ciudad" name="city" />
+                    <label>Localidad:</label>
+                    <input type="text" placeholder="Localidad" name="state" />
+                    <label>Provincia:</label>
+                    <input type="text" placeholder="Provincia" name="state" /><br>
+                </div>
                 <div>
                     <input type="submit" value="Buscar" />
                     <input type="reset" value="Limpiar formulario" />
@@ -121,122 +123,122 @@
         </div>
 
         <h2>Resultados:</h2>
-            <table class="fondoTabla showondesktop">
-                <!--comienzo de la Tabla de Resultados-->
-                <!--Primero se indican las filas-->
-                <tr>
-                    <!--Fila del encabezado-->
-                    <th>Nombre</th>
-                    <th>Tipo</th>
-                    <th>Ciudad/Localidad/Provincia</th>
-                    <th>Contacto</th>
-                </tr>
-                <tr>
-                    <!--Fila de la tabla-->
-                    <td>Giacomo Martin</td>
-                    <td>Electricidad</td>
-                    <td>La Plata/Buenos Aires</td>
-                    <td>819129293001</td>
-                </tr>
-                <tr>
-                    <!--Fila de la tabla-->
-                    <td>Perez Martin</td>
-                    <td>Pintura</td>
-                    <td>Capital/Cordoba</td>
-                    <td>819129293001</td>
-                </tr>
-                <tr>
-                    <!--Fila de la tabla-->
-                    <td>Perez Alberto</td>
-                    <td>Plomeria</td>
-                    <td>Capital/Cordoba</td>
-                    <td>352525323434</td>
+        <table class="fondoTabla showondesktop">
+            <!--comienzo de la Tabla de Resultados-->
+            <!--Primero se indican las filas-->
+            <tr>
+                <!--Fila del encabezado-->
+                <th>Nombre</th>
+                <th>Tipo</th>
+                <th>Ciudad/Localidad/Provincia</th>
+                <th>Contacto</th>
+            </tr>
+            <tr>
+                <!--Fila de la tabla-->
+                <td>Giacomo Martin</td>
+                <td>Electricidad</td>
+                <td>La Plata/Buenos Aires</td>
+                <td>819129293001</td>
+            </tr>
+            <tr>
+                <!--Fila de la tabla-->
+                <td>Perez Martin</td>
+                <td>Pintura</td>
+                <td>Capital/Cordoba</td>
+                <td>819129293001</td>
+            </tr>
+            <tr>
+                <!--Fila de la tabla-->
+                <td>Perez Alberto</td>
+                <td>Plomeria</td>
+                <td>Capital/Cordoba</td>
+                <td>352525323434</td>
 
-                </tr>
-            </table>
-            <!--Fin de la Tabla de Resultados-->
-            <table class="fondoTabla showonmobile">
-                <!--comienzo de la Tabla de Resultados-->
-                <!--Primero se indican las filas-->
-                <tr>
-                    <!--Fila del encabezado-->
-                    <th>Nombre</th>
-                    <td>Giacomo Martin</td>
-                </tr>
-                <tr>
-                    <th>Tipo</th>
-                    <!--Fila de la tabla-->
-                    <td>Electricidad</td>
-               </tr>
-                <tr>
-                    <!--Fila de la tabla-->
-                    <th>Ciudad/
+            </tr>
+        </table>
+        <!--Fin de la Tabla de Resultados-->
+        <table class="fondoTabla showonmobile">
+            <!--comienzo de la Tabla de Resultados-->
+            <!--Primero se indican las filas-->
+            <tr>
+                <!--Fila del encabezado-->
+                <th>Nombre</th>
+                <td>Giacomo Martin</td>
+            </tr>
+            <tr>
+                <th>Tipo</th>
+                <!--Fila de la tabla-->
+                <td>Electricidad</td>
+            </tr>
+            <tr>
+                <!--Fila de la tabla-->
+                <th>Ciudad/
                     Localidad/
                     Provincia</th>
-                    <td>La Plata/Buenos Aires</td>
-                 </tr>
-                <tr>
-                    <!--Fila de la tabla-->
-                    <th>Contacto</th>
-                    <td>819129293001</td>
+                <td>La Plata/Buenos Aires</td>
+            </tr>
+            <tr>
+                <!--Fila de la tabla-->
+                <th>Contacto</th>
+                <td>819129293001</td>
 
-                </tr>
-            </table>
-            <table class="fondoTabla showonmobile">
-                <!--comienzo de la Tabla de Resultados-->
-                <!--Primero se indican las filas-->
-                <tr>
-                    <!--Fila del encabezado-->
-                    <th>Nombre</th>
-                    <td>Perez Martin</td>
- 
-                </tr>
-                <tr>
-                    <th>Tipo</th>
-                    <!--Fila de la tabla-->
-                    <td>Pintura</td>
+            </tr>
+        </table>
+        <table class="fondoTabla showonmobile">
+            <!--comienzo de la Tabla de Resultados-->
+            <!--Primero se indican las filas-->
+            <tr>
+                <!--Fila del encabezado-->
+                <th>Nombre</th>
+                <td>Perez Martin</td>
 
-                </tr>
-                <tr>
-                    <!--Fila de la tabla-->
-                    <th>Ciudad/
-                        Localidad/
-                        Provincia</th>
-                    <td>Capital/Cordoba</td>
-                </tr>
-                <tr>
-                    <!--Fila de la tabla-->
-                    <th>Contacto</th>
-                    <td>819129293001</td>
-                </tr>
-            </table>
-            <table class="fondoTabla showonmobile">
-                <!--comienzo de la Tabla de Resultados-->
-                <!--Primero se indican las filas-->
-                <tr>
-                    <!--Fila del encabezado-->
-                    <th>Nombre</th>
-                    <td>Perez Alberto</td>
-                </tr>
-                <tr>
-                    <th>Tipo</th>
-                    <!--Fila de la tabla-->
-                    <td>Plomeria</td>
+            </tr>
+            <tr>
+                <th>Tipo</th>
+                <!--Fila de la tabla-->
+                <td>Pintura</td>
 
-                </tr>
-                <tr>
-                    <!--Fila de la tabla-->
-                    <th>Ciudad/
-                        Localidad/
-                        Provincia</th>
-                    <td>Capital/Cordoba</td>
-                </tr>
-                <tr>
-                    <!--Fila de la tabla-->
-                    <th>Contacto</th>
-                    <td>352525323434</td>
-                </tr>
-            </table>
+            </tr>
+            <tr>
+                <!--Fila de la tabla-->
+                <th>Ciudad/
+                    Localidad/
+                    Provincia</th>
+                <td>Capital/Cordoba</td>
+            </tr>
+            <tr>
+                <!--Fila de la tabla-->
+                <th>Contacto</th>
+                <td>819129293001</td>
+            </tr>
+        </table>
+        <table class="fondoTabla showonmobile">
+            <!--comienzo de la Tabla de Resultados-->
+            <!--Primero se indican las filas-->
+            <tr>
+                <!--Fila del encabezado-->
+                <th>Nombre</th>
+                <td>Perez Alberto</td>
+            </tr>
+            <tr>
+                <th>Tipo</th>
+                <!--Fila de la tabla-->
+                <td>Plomeria</td>
+
+            </tr>
+            <tr>
+                <!--Fila de la tabla-->
+                <th>Ciudad/
+                    Localidad/
+                    Provincia</th>
+                <td>Capital/Cordoba</td>
+            </tr>
+            <tr>
+                <!--Fila de la tabla-->
+                <th>Contacto</th>
+                <td>352525323434</td>
+            </tr>
+        </table>
         <hr>
         <!--Fin cuerpo principal-->
         <!-- inicio de footer -->
