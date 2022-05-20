@@ -6,39 +6,28 @@
 }
 /* Los media queries van despues (de menor a mayor) */
 /* mobile first - customizado para 360px*/
-/*
-body {
-    overflow-x: hidden;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8rem;
-    background-color: rgba(213, 213, 213, 0.888);
-}
-*/
+
 #contenedor {
     display: grid;
     grid-template-areas:
-        "encabezado"
-        "navegacion"
         "principal"
-        "pie"
-    ;
+     ;
     grid-template-columns: 95%;
     font-size: 62.5%;
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
-    background-color: rgba(213, 213, 213, 0.888);
+    
 }
 
 main {
     grid-area: principal;
-    padding: 5px;
+    padding: 10px;
     display: flexbox;
 }
 
 p {
     font-family: 'Lobster', cursive;
-
 }
 
 h2 {
@@ -117,9 +106,9 @@ form input {
 .hvr-pulse-grow {
     display: inline-block;
     vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transform: perspective(0.1px) translateZ(-0.1px);
+    transform: perspective(0.1px) translateZ(-0.1px);
+    box-shadow: 0 0 1px rgba(224, 221, 221, 0);
     -webkit-animation-name: hvr-pulse-grow;
     animation-name: hvr-pulse-grow;
     -webkit-animation-duration: 1.5s;
@@ -180,7 +169,8 @@ form input {
 #textMision {
     /* propiedades decorativas */
     border: solid 5px rgb(117, 183, 117);
-    padding: 10px;
+    margin: 15px;
+    padding: 15px;
 
 }
 
@@ -206,7 +196,10 @@ form input {
     border: inset 10px rgb(113, 185, 163);
     margin: 5px;
 }
-
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
 /*Clases para hacer "aparecer o desaparecer" cosas en las vistas*/
 .showonmobile {
     display: inherit;
@@ -215,9 +208,20 @@ form input {
 .showondesktop {
     display: none;
 }
-
+@media (min-width: 576px) {
+    #nosotros {
+        display: flex;
+        margin: 15px;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    iframe {
+        width:480px;
+        height:320px;
+    }
+}
 /* Tables, notebooks y escritorio */
-@media screen and (min-width: 768px) {
+@media (min-width: 1200px) {
 
     /* DESDE 1200px */
     #contenedor {
@@ -231,28 +235,21 @@ form input {
     }
 
     main {
-        padding: 10px;
-        display: inline-block;
-    }
 
-    #nosotros {
-        display: flex;
-        margin: 5px;
-        flex-wrap: nowrap;
-        flex-direction: row;
+        display: inline-block;
     }
 
     #textMision {
         /* propiedades decorativas */
-        margin-left: 10px;
+        margin-left: 15px;
         overflow: auto;
     }
 
     #topServicios {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        column-gap: 10px;
-        justify-items: center;
+        column-gap:10px;
+        justify-items:auto;
     }
     form label {
         padding: 5px;
@@ -270,7 +267,10 @@ form input {
         display: block;
 
     }
-
+    iframe {
+        width:640px;
+        height:480px;
+    }
     /*Clases para hacer "aparecer o desaparecer" cosas en las vistas*/
     .showonmobile {
         display: none;
