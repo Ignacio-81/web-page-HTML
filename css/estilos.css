@@ -301,6 +301,7 @@ td {
 .fondoTabla {
     background-color: rgb(246, 244, 157);
     border: inset 10px rgb(214, 210, 138);
+    margin: 5px;
     margin-bottom: 3px;
     width: 95%;
 }
