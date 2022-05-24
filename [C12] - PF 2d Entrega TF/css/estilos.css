@@ -37,14 +37,6 @@ h2 {
     margin-bottom: 10px;
 }
 
-form label {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-form input {
-    margin: 1px;
-}
 
 /*============================ Animacion para imagenes ==================*/
 .img-style:hover .caption {
@@ -182,6 +174,7 @@ form input {
 }
 
 /*=========================Clases========================================*/
+
 .columnForm {
     display: flex;
     flex-direction: column;
@@ -282,14 +275,6 @@ form input {
     }
 }
 
-/*Damos estilo a las celdas de las tablas:*/
-td {
-    text-align: left;
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-}
-
 /*------------------Clases------------------------------*/
 
 .boton_form--pos {
@@ -297,12 +282,4 @@ td {
     align-self: flex-end;
     margin: 5px;
     text-align: right;
-}
-
-.fondoTabla {
-    background-color: rgb(246, 244, 157);
-    border: inset 10px rgb(214, 210, 138);
-    margin: 5px;
-    margin-bottom: 3px;
-    width: 95%;
 }
