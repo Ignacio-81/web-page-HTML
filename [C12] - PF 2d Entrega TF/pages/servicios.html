@@ -95,34 +95,40 @@
 
     <div id="conentedor">
         <h2>Busca Servicios:</h2>
+        <hr class="my-3 mb-1">
         <div>
-
-            <form class="fondoForm">
-                <!--Comienza el Formulario-->
-                <label>Tipo Servicio</label>
-                <select name="service">
-                    <option value="todos">Todos</option>
-                    <option value="Elec">Electricidad</option>
-                    <option value="Plom">Plomeria</option>
-                    <option value="Install">Instaladores</option>
-                    <option value="jard">Jardineria</option>
-                    <option value="cadeteria">Cadeteria</option>
-                    <option value="otro">Otros</option>
-                </select><br>
-                <div class="columnForm">
-                    <label>Ciudad:</label>
-                    <input type="text" placeholder="Ciudad" name="city" />
-                    <label>Localidad:</label>
-                    <input type="text" placeholder="Localidad" name="state" />
-                    <label>Provincia:</label>
-                    <input type="text" placeholder="Provincia" name="state" /><br>
+            <form class="row g-3 fondoForm">
+                <div class="col-md-5 col-8">
+                    <label for="inputNombre" class="form-label">Tipo de Servicio:</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione el servicio</option>
+                        <option value="todos">Todos</option>
+                        <option value="Elec">Electricidad</option>
+                        <option value="Plom">Plomeria</option>
+                        <option value="Install">Instaladores</option>
+                        <option value="jard">Jardineria</option>
+                        <option value="cadeteria">Cadeteria</option>
+                        <option value="otro">Otros</option>
+                      </select>
                 </div>
-                <div>
-                    <input type="submit" value="Buscar" />
-                    <input type="reset" value="Limpiar formulario" />
+                <div class="col-12">
+                    <label for="inputciudad" class="form-label">Ciudad:</label>
+                    <input type="text" class="form-control" id="inputciudad">
+                </div>
+                <div class="col-12">
+                    <label for="inputlocalidad" class="form-label">Localidad:</label>
+                    <input type="text" class="form-control" id="inputlocalidad">
+                </div>
+                <div class="col-12">
+                    <label for="inputprov" class="form-label">Provincia:</label>
+                    <input type="text" class="form-control" id="inputprov">
+                </div>
+             
+                <div class="mb-3 col-12">
+                    <button type="reset" class="btn btn-primary">Limpiar Formulario</button>
+                    <button type="submit" class="btn btn-success">Enviar</button>
                 </div>
             </form>
-            <!--Fin Formulario-->
             <hr>
         </div>
 
