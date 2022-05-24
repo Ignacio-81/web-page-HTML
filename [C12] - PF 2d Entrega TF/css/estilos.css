@@ -37,14 +37,6 @@ h2 {
     margin-bottom: 10px;
 }
 
-form label {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-form input {
-    margin: 1px;
-}
 
 /*============================ Animacion para imagenes ==================*/
 .img-style:hover .caption {
@@ -88,7 +80,7 @@ form input {
     transition: all 0.25s ease-in-out;
 }
 
-/* Pulse Grow */
+/* =====================Animacion del text de "Nosotros"=========== */
 @-webkit-keyframes hvr-pulse-grow {
     to {
         -webkit-transform: scale(1.1);
@@ -106,8 +98,8 @@ form input {
 .hvr-pulse-grow {
     display: inline-block;
     vertical-align: middle;
-    -webkit-transform: perspective(0.1px) translateZ(-0.1px);
-    transform: perspective(0.1px) translateZ(-0.1px);
+    -webkit-transform: perspective(1px) translateZ(-0.1px);
+    transform: perspective(1px) translateZ(-0.1px);
     box-shadow: 0 0 1px rgba(224, 221, 221, 0);
     -webkit-animation-name: hvr-pulse-grow;
     animation-name: hvr-pulse-grow;
@@ -131,7 +123,7 @@ form input {
     margin: 0 left;
     justify-content: left;   
 }
-/* Animation */
+/* Animacion del text "escribinos"================================== */
 .anim-typewriter {
     animation: typewriter 4s steps(25) 1s infinite normal both,
         blinkTextCursor 500ms steps(10) infinite normal;
@@ -169,7 +161,7 @@ form input {
 #textMision {
     /* propiedades decorativas */
     border: solid 5px rgb(117, 183, 117);
-    margin: 15px;
+    margin: 30px;
     padding: 15px;
 
 }
@@ -182,6 +174,7 @@ form input {
 }
 
 /*=========================Clases========================================*/
+
 .columnForm {
     display: flex;
     flex-direction: column;
@@ -241,7 +234,8 @@ form input {
 
     #textMision {
         /* propiedades decorativas */
-        margin-left: 15px;
+        margin-left: 30px;
+        
         overflow: auto;
     }
 
@@ -281,14 +275,6 @@ form input {
     }
 }
 
-/*Damos estilo a las celdas de las tablas:*/
-td {
-    text-align: left;
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-}
-
 /*------------------Clases------------------------------*/
 
 .boton_form--pos {
@@ -296,12 +282,4 @@ td {
     align-self: flex-end;
     margin: 5px;
     text-align: right;
-}
-
-.fondoTabla {
-    background-color: rgb(246, 244, 157);
-    border: inset 10px rgb(214, 210, 138);
-    margin: 5px;
-    margin-bottom: 3px;
-    width: 95%;
 }

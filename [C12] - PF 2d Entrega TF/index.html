@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Service Pal</title>
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,10 +43,11 @@
         <!-- Encabezado-->
         <header class="navbar navbar-light bg-light">
 
-                <a class="navbar-brand" href="#">
-                <img src="assets/img/CircularEconomy_image.jpg" alt="" width="50" height="35" class="d-inline-block align-text-top">
-                    SERVICE PAL
-                </a>
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/CircularEconomy_image.jpg" alt="" width="50" height="35"
+                    class="d-inline-block align-text-top">
+                SERVICE PAL
+            </a>
 
             <form class="justify-content-center">
                 <button type="button" class="btn btn-outline-primary">LogIn</button>
@@ -56,43 +58,41 @@
         <!--Menu de Navegación-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Menu</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#posNosotros">Nostros</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Servicios
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="./pages/servicios.html">Busca Servicios</a></li>
-                      <li><a class="dropdown-item" href="./pages/altaServicio.html">Carga tu Servicio</a></li>
+                <a class="navbar-brand" href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#posNosotros">Nostros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="pages/servicios.html">Busca Servicios</a></li>
+                                <li><a class="dropdown-item" href="pages/altaServicios.html">Carga tu Servicio</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
                     </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+                </div>
             </div>
-          </nav>
-        
+        </nav>
+
     </div>
 
     <div id="conentedor">
-        <!--Fin Encabezado-->
-        <!--
-        <div id=" posNosotros">
-        </div>
-        -->
         <!--Inicio cuerpo principal-->
         <main>
             <h2>Top Servicios:</h2>
@@ -150,44 +150,59 @@
             </section>
             <hr>
             <!--FIN Quienes somos?-->
-
-            <h2 class="line-1 anim-typewriter">Escribinos...</h2>
+            <!--INICIO Formulario  Contacto-->
             <div id="contacto">
-                <form class="fondoForm">
-                    <!--Comienza el Formulario de Contacto-->
-                    <fieldset>
-                        <!--Se enmarcan los datos personales-->
-                        <legend>Datos Personales:</legend>
-                        <div class="columnForm">
-                            <label>Nombre:</label>
-                            <input type="text" placeholder="Nombre" name="Name" required />
-                            <label>Apellido:</label>
-                            <input type="text" placeholder="Nombre" name="Name" required />
-                            <label>E-mail:</label>
-                            <input type="text" placeholder="Dirección de correo" name="email" required />
-                        </div>
-                        <br>
-                        <label>Proveedor</label>
-                        <input type="radio" name="tipo" value="supplier" required />
-                        <label>Cliente</label>
-                        <input type="radio" name="tipo" value="client" required /><br>
-
-                    </fieldset>
-                    <br>
-                    <label>Comentarios:</label><br>
-                    <div class="showondesktop"> <textarea name="comments" rows="5" cols="60">Escribe aqui</textarea><br>
+                <h2 class="line-1 anim-typewriter">Escribinos...</h2>
+                <hr class="my-3 mb-1">
+                <form class="row g-3 fondoForm">
+                    <h4 class="mb-1">Datos Personales:</h4>
+                    <div class="col-md-6">
+                        <label for="inputNombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="inputNombre">
                     </div>
+                    <div class="col-md-6">
+                        <label for="inputApellido" class="form-label">Apellido:</label>
+                        <input type="text" class="form-control" id="inputApellido">
+                    </div>
+                    <div class="col-12 needs-validation was-validated" novalidate>
+                        <label for="inputEmail" class="form-label">E-mail:</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="example@mail.com">
+                        <div class="invalid-feedback">
+                            Por favor ingrese un e-mail válido (ejemplo@mail.com)
+                        </div>
+                    </div>
+                    <hr class="my-3 mb-1">
+                    <h5 class="mb-1">Seleccione Tipo:</h5>
+                    <div class="my-3">
+                        <div class="form-check">
+                            <input id="proveedor" name="tipo" type="radio" class="form-check-input" required="">
+                            <label class="form-check-label" for="proveedor">Proveedor</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="cliente" name="tipo" type="radio" class="form-check-input" required="">
+                            <label class="form-check-label" for="cliente">Cliente</label>
+                        </div>
+                    </div>
+                    <h5 class="mb-1">Comentarios:</h5>
+                    <textarea class="form-control" placeholder="Escriba aqui..." id="Textarea"
+                        style="height: 100px"></textarea>
 
-                    <div class="showonmobile"> <textarea name="comments" rows="5" cols="35">""</textarea><br> </div>
-
-                    <label>Aceptas los términos</label>
-                    <input type="checkbox" name="acepta" value="1" required /><br><br>
-                    <div Class="boton_form--size">
-                        <input Class="boton_form--size" type="reset" value="Limpiar formulario" />
-                        <input Class="boton_form--size" type="submit" value="Enviar" />
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Acepte los terminos
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="reset" class="btn btn-primary">Limpiar Formulario</button>
+                        <button type="submit" class="btn btn-success">Enviar</button>
                     </div>
                 </form>
-                <!--Fin Formulario-->
+            </div>
+
+            <!--Fin Formulario-->
         </main>
     </div>
     <!--FIN Contenedor general-->
@@ -217,7 +232,9 @@
     <!-- Fin de footer -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
