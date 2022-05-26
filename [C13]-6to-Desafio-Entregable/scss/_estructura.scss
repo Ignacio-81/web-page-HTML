@@ -1,0 +1,25 @@
+/*Aplicamos un reset General para el CSS*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Definimos una estructura para los componentes fuera de Bootstrap*/
+#contenedor {
+    display: grid;
+    grid-template-areas:
+        "principal"
+     ;
+    grid-template-columns: 95%;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    
+}
+
+main {
+    grid-area: principal;
+    padding: 10px;
+    display: flexbox;
+}
