@@ -17,9 +17,27 @@
     font-size: 1.8rem;
     
 }
-
+h2 {
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 main {
     grid-area: principal;
     padding: 10px;
     display: flexbox;
+}
+/*==============================IDs=====================================*/
+#nosotros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5px;
+    justify-content: center;
+}
+#topServicios {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
 }

@@ -1,135 +1,287 @@
-/*Css General Proyecto*/
+/*Archivo de estilo SASS principal*/
+/*Aplicamos un reset General para el CSS*/
+/* line 2, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_estructura.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
 
+/* Definimos una estructura para los componentes fuera de Bootstrap*/
+/* line 8, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_estructura.scss */
+#contenedor {
+  display: grid;
+  grid-template-areas: "principal";
+  grid-template-columns: 95%;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+}
+
+/* line 20, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_estructura.scss */
 h2 {
-    margin: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-form{
-    background-color: rgb(146, 172, 182);
-    border: inset 10px rgb(113, 185, 163);
-    margin: 5px;
+  margin: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-
+/* line 25, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_estructura.scss */
+main {
+  grid-area: principal;
+  padding: 10px;
+  display: flexbox;
+}
 
 /*==============================IDs=====================================*/
+/* line 31, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_estructura.scss */
 #nosotros {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 5px;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 5px;
+  justify-content: center;
 }
 
-#textMision {
-    /* propiedades decorativas */
-    border: solid 5px rgb(117, 183, 117);
-    margin: 30px;
-    padding: 15px;
-
-}
-
+/* line 38, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_estructura.scss */
 #topServicios {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
 }
 
-/*=========================Clases========================================*/
-
-.bi {
-    vertical-align: -.125em;
-    fill: currentColor;
-  }
+/*Estilos generales para los media Queries*/
+/* Los media queries van despues (de menor a mayor) */
+/* mobile first - customizado para 360px*/
 /*Clases para hacer "aparecer o desaparecer" cosas en las vistas*/
+/* line 7, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_responsive.scss */
 .showonmobile {
-    display: inherit;
+  display: inherit;
 }
 
+/* line 11, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_responsive.scss */
 .showondesktop {
-    display: none;
+  display: none;
 }
+
 @media (min-width: 576px) {
-    #nosotros {
-        display: flex;
-        margin: 15px;
-        flex-wrap: nowrap;
-        flex-direction: row;
-    }
-    iframe {
-        width:480px;
-        height:320px;
-    }
+  /* line 16, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_responsive.scss */
+  #nosotros {
+    margin: 15px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  /* line 21, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_responsive.scss */
+  iframe {
+    width: 480px;
+    height: 320px;
+  }
 }
+
 /* Tables, notebooks y escritorio */
 @media (min-width: 1200px) {
-
-    /* DESDE 1200px */
-    #contenedor {
-        grid-template-columns: 100%;
-        grid-template-rows: auto 300px minmax(400px, auto) 50px;
-        max-width: 1000px;
-        width: 100%;
-        margin: auto;
-        background: white;
-        font-size: 180%;
-    }
-
-    main {
-
-        display: inline-block;
-    }
-
-    #textMision {
-        /* propiedades decorativas */
-        margin-left: 30px;
-        
-        overflow: auto;
-    }
-
-    #topServicios {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        column-gap:10px;
-        justify-items:auto;
-    }
-    form label {
-        padding: 5px;
-    }
-
-    form input {
-        margin: 5px;
-    }
-
-    .boton_form--size {
-        font-size: 20px;
-    }
-
-    .columnForm {
-        display: block;
-
-    }
-    iframe {
-        width:640px;
-        height:480px;
-    }
-    /*Clases para hacer "aparecer o desaparecer" cosas en las vistas*/
-    .showonmobile {
-        display: none;
-    }
-
-    .showondesktop {
-        display: flex;
-    }
-}
-
-/*------------------Clases------------------------------*/
-
-.boton_form--pos {
-    position: relative;
-    align-self: flex-end;
+  /* DESDE 1200px */
+  /* line 31, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_responsive.scss */
+  #contenedor {
+    grid-template-columns: 100%;
+    grid-template-rows: auto 300px minmax(400px, auto) 50px;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    background: white;
+    font-size: 180%;
+  }
+  /* line 41, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_responsive.scss */
+  main {
+    display: inline-block;
+  }
+  /* line 46, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_responsive.scss */
+  #textMision {
+    /* propiedades decorativas */
+    margin-left: 30px;
+    overflow: auto;
+  }
+  /* line 53, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_responsive.scss */
+  #topServicios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    justify-items: auto;
+  }
+  /* line 59, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_responsive.scss */
+  form label {
+    padding: 5px;
+  }
+  /* line 63, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_responsive.scss */
+  form input {
     margin: 5px;
-    text-align: right;
+  }
+  /* line 67, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_responsive.scss */
+  .boton_form--size {
+    font-size: 20px;
+  }
+  /* line 71, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_responsive.scss */
+  .columnForm {
+    display: block;
+  }
+  /* line 75, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_responsive.scss */
+  iframe {
+    width: 640px;
+    height: 480px;
+  }
+  /*Clases para hacer "aparecer o desaparecer" cosas en las vistas*/
+  /* line 80, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_responsive.scss */
+  .showonmobile {
+    display: none;
+  }
+  /* line 84, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_responsive.scss */
+  .showondesktop {
+    display: flex;
+  }
 }
+
+/* Estilos generales para las fuentes*/
+/* line 5, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_fuentes.scss */
+
+section p {
+  font-family: 'Lobster', cursive;
+}
+
+/* Estilos Generales para las animaciones */
+/*============================ Animacion para imagenes ==================*/
+/* line 4, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_animaciones.scss */
+.img-style:hover .caption {
+  opacity: 1;
+}
+
+/* line 8, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_animaciones.scss */
+.img-style:hover img {
+  opacity: 1;
+  transform: scale(1.25, 1.25);
+  -webkit-transform: scale(1.25, 1.25);
+  -moz-transform: scale(1.25, 1.25);
+  -ms-transform: scale(1.25, 1.25);
+  -o-transform: scale(1.25, 1.25);
+}
+
+/* line 18, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_animaciones.scss */
+.img-style img {
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  z-index: 4;
+}
+
+/* line 26, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_animaciones.scss */
+.img-style .caption {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -ms-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+
+/* line 37, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_animaciones.scss */
+.img-style img {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+/* =====================Animacion del text de "Nosotros"=========== */
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+/* line 60, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_animaciones.scss */
+.hvr-pulse-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(-0.1px);
+  transform: perspective(1px) translateZ(-0.1px);
+  box-shadow: 0 0 1px rgba(224, 221, 221, 0);
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+/* line 78, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_animaciones.scss */
+.line-1 {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 left;
+  justify-content: left;
+}
+
+/* Animacion del text "escribinos"================================== */
+/* line 89, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_animaciones.scss */
+.anim-typewriter {
+  animation: typewriter 4s steps(25) 1s infinite normal both, blinkTextCursor 500ms steps(10) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 6em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(0, 0, 0, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/* line 2, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_decoraciones.scss */
+form {
+  background-color: #92acb6;
+  border: inset 10px #71b9a3;
+  margin: 5px;
+}
+
+/* line 7, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_decoraciones.scss */
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+/* line 12, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_decoraciones.scss */
+#textMision {
+  /* propiedades decorativas */
+  border: solid 5px #75b775;
+  margin: 30px;
+  padding: 15px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
