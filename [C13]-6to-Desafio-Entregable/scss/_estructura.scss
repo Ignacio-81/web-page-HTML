@@ -7,23 +7,24 @@
 /* Definimos una estructura para los componentes fuera de Bootstrap*/
 #contenedor {
     display: grid;
+    /*
     grid-template-areas:
         "principal"
-     ;
+     ;*/
     grid-template-columns: 95%;
     font-size: 62.5%;
     overflow-x: hidden;
-    font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
     
 }
-h2 {
+main h2 {
+
     margin: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 main {
-    grid-area: principal;
+    /*grid-area: principal;*/
     padding: 10px;
     display: flexbox;
 }

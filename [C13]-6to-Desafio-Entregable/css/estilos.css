@@ -10,30 +10,32 @@
 /* line 8, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_estructura.scss */
 #contenedor {
   display: grid;
-  grid-template-areas: "principal";
+  /*
+    grid-template-areas:
+        "principal"
+     ;*/
   grid-template-columns: 95%;
   font-size: 62.5%;
   overflow-x: hidden;
-  font-family: 'Roboto', sans-serif;
   font-size: 1.8rem;
 }
 
 /* line 20, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_estructura.scss */
-h2 {
+main h2 {
   margin: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/* line 25, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_estructura.scss */
+/* line 26, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_estructura.scss */
 main {
-  grid-area: principal;
+  /*grid-area: principal;*/
   padding: 10px;
   display: flexbox;
 }
 
 /*==============================IDs=====================================*/
-/* line 31, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_estructura.scss */
+/* line 32, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_estructura.scss */
 #nosotros {
   display: flex;
   flex-direction: column;
@@ -42,12 +44,45 @@ main {
   justify-content: center;
 }
 
-/* line 38, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_estructura.scss */
+/* line 39, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_estructura.scss */
 #topServicios {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 5px;
+}
+
+/* Estilos generales para las fuentes*/
+/* line 5, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_fuentes.scss */
+
+section p {
+  font-family: 'Lobster', cursive;
+}
+
+/* line 10, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_fuentes.scss */
+main h2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 2, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_decoraciones.scss */
+form {
+  background-color: #92acb6;
+  border: inset 10px #71b9a3;
+  margin: 5px;
+}
+
+/* line 7, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_decoraciones.scss */
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+/* line 12, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_decoraciones.scss */
+#textMision {
+  /* propiedades decorativas */
+  border: solid 5px #75b775;
+  margin: 30px;
+  padding: 15px;
 }
 
 /*Estilos generales para los media Queries*/
@@ -138,13 +173,6 @@ main {
   .showondesktop {
     display: flex;
   }
-}
-
-/* Estilos generales para las fuentes*/
-/* line 5, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_fuentes.scss */
-
-section p {
-  font-family: 'Lobster', cursive;
 }
 
 /* Estilos Generales para las animaciones */
@@ -261,27 +289,6 @@ section p {
   to {
     border-right-color: transparent;
   }
-}
-
-/* line 2, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_decoraciones.scss */
-form {
-  background-color: #92acb6;
-  border: inset 10px #71b9a3;
-  margin: 5px;
-}
-
-/* line 7, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_decoraciones.scss */
-.bi {
-  vertical-align: -.125em;
-  fill: currentColor;
-}
-
-/* line 12, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C13]-6to-Desafio-Entregable/scss/_decoraciones.scss */
-#textMision {
-  /* propiedades decorativas */
-  border: solid 5px #75b775;
-  margin: 30px;
-  padding: 15px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
