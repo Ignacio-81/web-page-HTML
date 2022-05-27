@@ -1,13 +1,9 @@
-/* Estilos generales para las fuentes*/@at-root
-
-/*Estilo del texto de "Nuestra mision"*/
-section {
-    p {
-        font-family: 'Lobster', cursive;
-    }
+/* Estilos generales para las fuentes*/
+#contenedor{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
 }
-main {
-    h2{
-        font-family: 'Roboto', sans-serif;
-    }
+
+p {
+    font-family: 'Lobster', cursive;
 }

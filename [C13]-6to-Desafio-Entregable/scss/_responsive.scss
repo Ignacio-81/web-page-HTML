@@ -1,8 +1,5 @@
 /*Estilos generales para los media Queries*/
 
-/* Los media queries van despues (de menor a mayor) */
-/* mobile first - customizado para 360px*/
-
 /*Clases para hacer "aparecer o desaparecer" cosas en las vistas*/
 .showonmobile {
     display: inherit;
@@ -11,9 +8,9 @@
 .showondesktop {
     display: none;
 }
-
 @media (min-width: 576px) {
     #nosotros {
+        display: flex;
         margin: 15px;
         flex-wrap: nowrap;
         flex-direction: row;
@@ -22,8 +19,13 @@
         width:480px;
         height:320px;
     }
+    #topServicios {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap:10px;
+        justify-items:auto;
+    }
 }
-
 /* Tables, notebooks y escritorio */
 @media (min-width: 1200px) {
 
@@ -31,10 +33,9 @@
     #contenedor {
         grid-template-columns: 100%;
         grid-template-rows: auto 300px minmax(400px, auto) 50px;
-        max-width: 1000px;
+        max-width: 1200px;
         width: 100%;
         margin: auto;
-        background: white;
         font-size: 180%;
     }
 
@@ -50,12 +51,7 @@
         overflow: auto;
     }
 
-    #topServicios {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        column-gap:10px;
-        justify-items:auto;
-    }
+
     form label {
         padding: 5px;
     }
