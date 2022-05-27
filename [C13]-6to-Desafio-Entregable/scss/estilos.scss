@@ -1,4 +1,12 @@
 /*Archivo de estilo SASS principal*/
+/* Variables GLobales utilizadas*/
+$colorbordetexto: rgb(117, 183, 117);
+$colorbordeform: rgb(113, 185, 163);
+$colorfondoform: rgb(146, 172, 182);
 
+/* Categorias utilizadas */
 @import 'estructura';
 @import 'fuentes';
+@import 'decoraciones';
+@import 'responsive';
+@import 'animaciones';

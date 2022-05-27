@@ -1,0 +1,18 @@
+
+
+.fondoForm {
+    background-color: $colorfondoform;
+    border: inset 10px $colorbordeform;
+    margin: 5px;
+}
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+#textMision {
+    /* propiedades decorativas */
+    border: solid 5px $colorbordetexto;
+    margin: 30px;
+    padding: 15px;
+}

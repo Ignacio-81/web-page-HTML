@@ -3,8 +3,9 @@
     margin: 0;
     padding: 0;
 }
+/* Los media queries van despues (de menor a mayor) */
+/* mobile first - customizado para 360px*/
 
-/* Definimos una estructura para los componentes fuera de Bootstrap*/
 #contenedor {
     display: grid;
     grid-template-areas:
@@ -13,13 +14,44 @@
     grid-template-columns: 95%;
     font-size: 62.5%;
     overflow-x: hidden;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8rem;
+    background: white;
     
 }
-
 main {
     grid-area: principal;
     padding: 10px;
     display: flexbox;
+    h2 {
+        margin: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        &:hover{
+            color: red;
+        }
+    }
+}
+
+#nosotros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5px;
+    justify-content: center;
+}
+#topServicios {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+/*=========================Clases========================================*/
+
+.columnForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }

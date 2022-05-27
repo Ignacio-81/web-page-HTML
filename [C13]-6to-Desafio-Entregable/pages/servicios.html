@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -47,10 +47,10 @@
                 SERVICE PAL
             </a>
 
-            <div class="justify-content-center">
+            <form class="justify-content-center">
                 <button type="button" class="btn btn-outline-primary">LogIn</button>
                 <button type="button" class="btn btn-outline-secondary">Register</button>
-            </div>
+            </form>
         </header>
 
         <!--Menu de Navegación-->
@@ -94,84 +94,82 @@
     <!--Fin Encabezado-->
 
     <div id="conentedor">
-        <!--Inicio cuerpo principal-->
-        <main>
-            <h2>Busca Servicios:</h2>
-            <hr class="my-3 mb-1">
-            <div>
-                <form class="row g-3 fondoForm">
-                    <div class="col-md-5 col-8">
-                        <label for="inputNombre" class="form-label">Tipo de Servicio:</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleccione el servicio</option>
-                            <option value="todos">Todos</option>
-                            <option value="Elec">Electricidad</option>
-                            <option value="Plom">Plomeria</option>
-                            <option value="Install">Instaladores</option>
-                            <option value="jard">Jardineria</option>
-                            <option value="cadeteria">Cadeteria</option>
-                            <option value="otro">Otros</option>
-                        </select>
-                    </div>
-                    <div class="col-12">
-                        <label for="inputciudad" class="form-label">Ciudad:</label>
-                        <input type="text" class="form-control" id="inputciudad">
-                    </div>
-                    <div class="col-12">
-                        <label for="inputlocalidad" class="form-label">Localidad:</label>
-                        <input type="text" class="form-control" id="inputlocalidad">
-                    </div>
-                    <div class="col-12">
-                        <label for="inputprov" class="form-label">Provincia:</label>
-                        <input type="text" class="form-control" id="inputprov">
-                    </div>
+        <h2>Busca Servicios:</h2>
+        <hr class="my-3 mb-1">
+        <div>
+            <form class="row g-3 fondoForm">
+                <div class="col-md-5 col-8">
+                    <label for="inputNombre" class="form-label">Tipo de Servicio:</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione el servicio</option>
+                        <option value="todos">Todos</option>
+                        <option value="Elec">Electricidad</option>
+                        <option value="Plom">Plomeria</option>
+                        <option value="Install">Instaladores</option>
+                        <option value="jard">Jardineria</option>
+                        <option value="cadeteria">Cadeteria</option>
+                        <option value="otro">Otros</option>
+                      </select>
+                </div>
+                <div class="col-12">
+                    <label for="inputciudad" class="form-label">Ciudad:</label>
+                    <input type="text" class="form-control" id="inputciudad">
+                </div>
+                <div class="col-12">
+                    <label for="inputlocalidad" class="form-label">Localidad:</label>
+                    <input type="text" class="form-control" id="inputlocalidad">
+                </div>
+                <div class="col-12">
+                    <label for="inputprov" class="form-label">Provincia:</label>
+                    <input type="text" class="form-control" id="inputprov">
+                </div>
+             
+                <div class="mb-3 col-12">
+                    <button type="reset" class="btn btn-primary">Limpiar Formulario</button>
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                </div>
+            </form>
+            <hr>
+        </div>
 
-                    <div class="mb-3 col-12">
-                        <button type="reset" class="btn btn-primary">Limpiar Formulario</button>
-                        <button type="submit" class="btn btn-success">Enviar</button>
-                    </div>
-                </form>
-                <hr>
-            </div>
-
-            <h2>Resultados:</h2>
-            <div class="table-responsive ">
-                <table class="table table-hover mx-2">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Tipo Servicio</th>
-                            <th scope="col">Ciudad Localidad/Provincia</th>
-                            <th scope="col">Contacto</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Giacomo Martin</td>
-                            <td>Electricidad</td>
-                            <td>La Plata/Buenos Aires</td>
-                            <td>819129293001</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Perez Martin</td>
-                            <td>Pintura</td>
-                            <td>Capital/Cordoba</td>
-                            <td>819129293001</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Perez Alberto</td>
-                            <td>Plomeria</td>
-                            <td>Capital/Cordoba</td>
-                            <td>352525323434</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </main>
+        <h2>Resultados:</h2>
+        <div class="table-responsive ">
+            <table class="table table-hover mx-2">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Tipo Servicio</th>
+                        <th scope="col">Ciudad Localidad/Provincia</th>
+                        <th scope="col">Contacto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Giacomo Martin</td>
+                        <td>Electricidad</td>
+                        <td>La Plata/Buenos Aires</td>
+                        <td>819129293001</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Perez Martin</td>
+                        <td>Pintura</td>
+                        <td>Capital/Cordoba</td>
+                        <td>819129293001</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Perez Alberto</td>
+                        <td>Plomeria</td>
+                        <td>Capital/Cordoba</td>
+                        <td>352525323434</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       
     </div>
     <!--Fin cuerpo principal-->
     <!-- inicio de footer -->
