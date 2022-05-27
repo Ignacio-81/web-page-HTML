@@ -4,39 +4,134 @@
     margin: 0;
     padding: 0;
 }
+/*Fuente y tamaños a utilizar en el cuerpo de la pagina */
+body{
+    font-size: 1rem;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+main p {
+    font-family: 'Lobster', cursive;
+
+}
 /* Los media queries van despues (de menor a mayor) */
 /* mobile first - customizado para 360px*/
 
-#contenedor {
+#conentedor-ppal {
     display: grid;
-    grid-template-areas:
-        "principal"
-     ;
-    grid-template-columns: 95%;
-    font-size: 62.5%;
-    overflow-x: hidden;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8rem;
     
-}
-
-main {
-    grid-area: principal;
-    padding: 10px;
-    display: flexbox;
-}
-
-p {
-    font-family: 'Lobster', cursive;
-}
-
-h2 {
+    grid-template-areas: "h2top" "topserv" "h2nos" "video" "textM";
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 0.5rem;
     margin: 5px;
     margin-top: 10px;
+    grid-template-columns: 100%;
+}
+/*=========================Clases========================================*/
+.topServicios {
+    grid-area: topserv;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+    grid-row: 2;
 
-    margin-bottom: 10px;
 }
 
+.video{
+    display: grid;
+    grid-area: video;
+    justify-items: center;
+}
+
+.textMision{
+    grid-area: textM;
+
+    /* propiedades decorativas */
+    border: solid 5px rgb(117, 183, 117);
+    margin: 15px;
+    padding: 10px;
+}
+
+.fondoForm {
+    background-color: rgb(146, 172, 182);
+    border: inset 10px rgb(113, 185, 163);
+    margin-top: 5px;
+
+}
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+/* Variable para ajustar el text de acuerdo a los media queries */ 
+:root {
+  --text-font-size: 1rem;
+}
+
+@media (min-width: 576px) {
+
+    #nosotros {
+        display: flex;
+        margin: 15px;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    iframe {
+        width:480px;
+        height:320px;
+    }
+    :root {
+        --text-font-size: 1.3rem;
+      }
+}
+/* Tables, notebooks y escritorio */
+@media only screen and (min-width: 1024px)  {
+
+    /* DESDE 1200px */
+    #conentedor-ppal {
+        /*grid-template-columns: 100%;
+        grid-template-rows: auto 300px minmax(400px, auto) 50px;
+        */
+       /* max-width: 1000px;
+        */
+        width: 98%;
+        margin: 10px;
+        background: white;
+    }
+    .topServicios {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    form label {
+        padding: 5px;
+    }
+
+    form input {
+        margin: 5px;
+    }
+
+    iframe {
+
+        width:640px;
+        height:480px;
+    }
+    :root {
+        --text-font-size: 1.5rem;
+      }
+}
+/* Calculo de tamaño de los textos dependiendo del valor de la variable en lso medias queries*/
+main h2{
+    font-size: calc( 1.5 * var(--text-font-size) );
+}
+main h3{
+    font-size: calc( 1.2 * var(--text-font-size) );
+}
+p{
+    font-size: calc( 1 * var(--text-font-size) );
+}
 
 /*============================ Animacion para imagenes ==================*/
 .img-style:hover .caption {
@@ -51,7 +146,6 @@ h2 {
     -ms-transform: scale(1.25, 1.25);
     -o-transform: scale(1.25, 1.25);
 }
-
 
 .img-style img {
     margin: 0px;
@@ -147,139 +241,4 @@ h2 {
     to {
         border-right-color: transparent;
     }
-}
-
-/*==============================IDs=====================================*/
-#nosotros {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 5px;
-    justify-content: center;
-}
-
-#textMision {
-    /* propiedades decorativas */
-    border: solid 5px rgb(117, 183, 117);
-    margin: 30px;
-    padding: 15px;
-
-}
-
-#topServicios {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 5px;
-}
-
-/*=========================Clases========================================*/
-
-.columnForm {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-right: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-
-.fondoForm {
-    background-color: rgb(146, 172, 182);
-    border: inset 10px rgb(113, 185, 163);
-    margin: 5px;
-}
-.bi {
-    vertical-align: -.125em;
-    fill: currentColor;
-  }
-/*Clases para hacer "aparecer o desaparecer" cosas en las vistas*/
-.showonmobile {
-    display: inherit;
-}
-
-.showondesktop {
-    display: none;
-}
-@media (min-width: 576px) {
-    #nosotros {
-        display: flex;
-        margin: 15px;
-        flex-wrap: nowrap;
-        flex-direction: row;
-    }
-    iframe {
-        width:480px;
-        height:320px;
-    }
-}
-/* Tables, notebooks y escritorio */
-@media (min-width: 1200px) {
-
-    /* DESDE 1200px */
-    #contenedor {
-        grid-template-columns: 100%;
-        grid-template-rows: auto 300px minmax(400px, auto) 50px;
-        max-width: 1000px;
-        width: 100%;
-        margin: auto;
-        background: white;
-        font-size: 180%;
-    }
-
-    main {
-
-        display: inline-block;
-    }
-
-    #textMision {
-        /* propiedades decorativas */
-        margin-left: 30px;
-        
-        overflow: auto;
-    }
-
-    #topServicios {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        column-gap:10px;
-        justify-items:auto;
-    }
-    form label {
-        padding: 5px;
-    }
-
-    form input {
-        margin: 5px;
-    }
-
-    .boton_form--size {
-        font-size: 20px;
-    }
-
-    .columnForm {
-        display: block;
-
-    }
-    iframe {
-        width:640px;
-        height:480px;
-    }
-    /*Clases para hacer "aparecer o desaparecer" cosas en las vistas*/
-    .showonmobile {
-        display: none;
-    }
-
-    .showondesktop {
-        display: flex;
-    }
-}
-
-/*------------------Clases------------------------------*/
-
-.boton_form--pos {
-    position: relative;
-    align-self: flex-end;
-    margin: 5px;
-    text-align: right;
 }
