@@ -1,9 +1,42 @@
 /* Estilos generales para las fuentes*/
-#contenedor{
+body {
+    font-size: 1rem;
+    overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.8rem;
 }
 
-p {
-    font-family: 'Lobster', cursive;
+main {
+    p {
+        font-family: 'Lobster', cursive;
+    }
+}
+
+/* Calculo de tamaño de los textos dependiendo del valor de la variable en lso medias queries*/
+main {
+    h2 {
+        font-size: calc(1.4 * var(--text-font-size));
+
+        &:hover {
+            color: red;
+        }
+    }
+
+    h3 {
+        font-size: calc(1.2 * var(--text-font-size));
+    }
+}
+
+p,
+form h5 {
+    font-size: calc(1 * var(--text-font-size));
+}
+
+form {
+    h4 {
+        font-size: calc(1.1 * var(--text-font-size));
+    }
+
+    label {
+        font-size: calc(0.9 * var(--text-font-size));
+    }
 }

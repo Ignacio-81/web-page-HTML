@@ -46,7 +46,7 @@
             <a class="navbar-brand" href="#">
                 <img src="assets/img/CircularEconomy_image.jpg" alt="" width="50" height="35"
                     class="d-inline-block align-text-top">
-                SERVICE PAL
+                
             </a>
 
             <form class="justify-content-center">
@@ -58,7 +58,7 @@
         <!--Menu de Navegación-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Menu</a>
+                <a class="navbar-brand fs-2 fw-bold" href="#">SERVICE PAL</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -67,23 +67,23 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link fs-5" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#posNosotros">Nostros</a>
+                            <a class="nav-link active fs-5" href="#posNosotros">Nostros</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            <a class="nav-link  active dropdown-toggle fs-5" href="#" id="navbarDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Servicios
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="pages/servicios.html">Busca Servicios</a></li>
-                                <li><a class="dropdown-item" href="pages/altaServicios.html">Carga tu Servicio</a></li>
+                                <li><a class="dropdown-item fs-5" href="pages/servicios.html">Busca Servicios</a></li>
+                                <li><a class="dropdown-item fs-5" href="pages/altaServicios.html">Carga tu Servicio</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contacto">Contacto</a>
+                            <a class="nav-link active fs-5" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -92,11 +92,12 @@
 
     </div>
 
-    <div id="conentedor">
-        <!--Inicio cuerpo principal-->
-        <main>
+
+    <!--Inicio cuerpo principal-->
+    <main>
+        <div id="conentedor-ppal">
             <h2>Top Servicios:</h2>
-            <div id="topServicios">
+            <div class="topServicios">
                 <!--Fila General de Servicios-->
                 <div class="img-style">
                     <!--Col 1-->
@@ -122,23 +123,15 @@
             </div>
             <h2>Nosotros / Que Hacemos :</h2>
             <section id="nosotros">
-                <div class="showonmobile">
-                    <!--Columna 1 - Imagen-->
-                    <iframe width="320" height="200"
-                        src="https://www.youtube.com/embed/Aa1JTbs7DOA?list=PLKGMzxNFrwc4_-8DccVdXoZ0dEERZL5dR"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelersometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <div class="showondesktop">
-                    <!--Columna 1 - Imagen-->
-                    <iframe width="640" height="480"
+                <div class="video">
+                     
+                    <iframe width="320" height="200" 
                         src="https://www.youtube.com/embed/Aa1JTbs7DOA?list=PLKGMzxNFrwc4_-8DccVdXoZ0dEERZL5dR"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
-                <div id="textMision" class="hvr-pulse-grow">
+                <div class="textMision hvr-pulse-grow">
                     <!--Columna 2-->
                     <h3>Nuestra misión:</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque architecto, ab recusandae
@@ -153,8 +146,7 @@
             <!--INICIO Formulario  Contacto-->
             <div id="contacto">
                 <h2 class="line-1 anim-typewriter">Escribinos...</h2>
-                <hr class="my-3 mb-1">
-                <form class="row g-3 fondoForm">
+                <form class="row g-2 fondoForm">
                     <h4 class="mb-1">Datos Personales:</h4>
                     <div class="col-md-6">
                         <label for="inputNombre" class="form-label">Nombre:</label>
@@ -195,7 +187,7 @@
                             </label>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 d-flex justify-content-end">
                         <button type="reset" class="btn btn-primary">Limpiar Formulario</button>
                         <button type="submit" class="btn btn-success">Enviar</button>
                     </div>
@@ -203,9 +195,11 @@
             </div>
 
             <!--Fin Formulario-->
-        </main>
-    </div>
-    <!--FIN Contenedor general-->
+        </div>
+        <!--FIN Contenedor general-->
+    </main>
+
+
     <!-- inicio de footer -->
     <div class="container-fluid">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-1 my-2 border-top">

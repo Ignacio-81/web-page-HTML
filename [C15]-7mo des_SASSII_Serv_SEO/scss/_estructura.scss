@@ -1,57 +1,47 @@
+/*Configuracion General para la estructura del html*/
+
 /*Aplicamos un reset General para el CSS*/
 * {
     margin: 0;
     padding: 0;
 }
-/* Los media queries van despues (de menor a mayor) */
-/* mobile first - customizado para 360px*/
 
-#contenedor {
+#conentedor-ppal {
     display: grid;
-    grid-template-areas:
-        "principal"
-     ;
-    grid-template-columns: 95%;
-    font-size: 62.5%;
-    overflow-x: hidden;
-    background: white;
     
-}
-main {
-    grid-area: principal;
-    padding: 10px;
-    display: flexbox;
-    h2 {
-        margin: 5px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        &:hover{
-            color: red;
-        }
-    }
-}
-
-#nosotros {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    grid-template-areas: "h2top" "topserv" "h2nos" "video" "textM";
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 0.5rem;
     margin: 5px;
-    justify-content: center;
-}
-#topServicios {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 5px;
+    margin-top: 10px;
+    grid-template-columns: 100%;
 }
 
 /*=========================Clases========================================*/
-
-.columnForm {
+.topServicios {
+    grid-area: topserv;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    margin-right: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+    grid-row: 2;
+
 }
+
+.video{
+    display: grid;
+    grid-area: video;
+    justify-items: center;
+}
+
+.textMision{
+    grid-area: textM;
+
+}
+
+/* Variable para ajustar el text de acuerdo a los media queries */ 
+:root {
+  --text-font-size: 1rem;
+}
+
