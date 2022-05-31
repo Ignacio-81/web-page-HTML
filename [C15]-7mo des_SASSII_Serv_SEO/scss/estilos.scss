@@ -1,10 +1,21 @@
 /*Archivo de estilo SASS principal*/
 
 /* Variables GLobales utilizadas*/
-$colorfondgral: white;
-$colorbordetexto: rgb(117, 183, 117);
-$colorbordeform: rgb(113, 185, 163);
-$colorfondoform: rgb(146, 172, 182);
+
+/*Variable para indicar e identificar que la version es beta o no, si es beta: 
+el fondo general es amarillo , si es final, el fondo es blanco */
+$beta_final: final;
+
+/*Utilizamos maps para definir los colores utilizados */
+$colores:(
+    fondgral: white,
+    bordetexto: rgb(117, 183, 117),
+    bordeform: rgb(113, 185, 163),
+    fondoform: rgb(146, 172, 182),
+
+);
+
+
 
 /* Categorias utilizadas */
 @import 'estructura';

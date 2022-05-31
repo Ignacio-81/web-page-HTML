@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /*Archivo de estilo SASS principal*/
 /* Variables GLobales utilizadas*/
+/*Variable para indicar e identificar que la version es beta o no, si es beta: 
+el fondo general es amarillo , si es final, el fondo es blanco */
+/*Utilizamos maps para definir los colores utilizados */
 /* Categorias utilizadas */
 /*Configuracion General para la estructura del html*/
 /*Aplicamos un reset General para el CSS*/
@@ -51,30 +54,50 @@
   --text-font-size: 1rem;
 }
 
-/* line 2, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
+/*Decoraciones para todos elementos de las paginas*/
+/*usamos MAPS para definir la Variable para los colores de los iconos de las redes*/
+/* line 10, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
 #conentedor-ppal {
   background: white;
 }
 
-/* line 5, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
+/*Propiedades deco de el fondo y borde de los formularios*/
+/* line 15, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
 .fondoForm {
   background-color: #92acb6;
   border: inset 10px #71b9a3;
   margin-top: 5px;
 }
 
-/* line 11, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
+/* line 21, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
 .bi {
   vertical-align: -.125em;
   fill: currentColor;
 }
 
-/* line 16, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
+/*propiedades para el texto de la Mision de la empresa*/
+/* line 26, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
 .textMision {
   /* propiedades decorativas */
   border: solid 5px #75b775;
   margin: 15px;
   padding: 10px;
+}
+
+/*Utilizamos un bucle para generar cada color */
+/* line 35, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
+.color--twitter {
+  color: #51aff8;
+}
+
+/* line 35, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
+.color--facebook {
+  color: #2956a3;
+}
+
+/* line 35, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
+.color--instagram {
+  color: #e65444;
 }
 
 /*Estilos generales para los media Queries*/
@@ -86,12 +109,12 @@
     flex-wrap: nowrap;
     flex-direction: row;
   }
-  /* line 11, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_responsive.scss */
+  /* line 12, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_responsive.scss */
   iframe {
     width: 480px;
     height: 320px;
   }
-  /* line 15, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_responsive.scss */
+  /* line 17, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_responsive.scss */
   :root {
     --text-font-size: 1.3rem;
   }
@@ -100,31 +123,31 @@
 /* Tables, notebooks y escritorio */
 @media only screen and (min-width: 1024px) {
   /* DESDE 1200px */
-  /* line 23, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_responsive.scss */
+  /* line 27, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_responsive.scss */
   #conentedor-ppal {
     width: 98%;
     margin: 10px;
   }
-  /* line 27, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_responsive.scss */
+  /* line 32, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_responsive.scss */
   .topServicios {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
   }
-  /* line 32, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_responsive.scss */
+  /* line 38, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_responsive.scss */
   form label {
     padding: 5px;
   }
-  /* line 36, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_responsive.scss */
+  /* line 42, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_responsive.scss */
   form input {
     margin: 5px;
   }
-  /* line 40, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_responsive.scss */
+  /* line 46, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_responsive.scss */
   iframe {
     width: 640px;
     height: 480px;
   }
-  /* line 45, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_responsive.scss */
+  /* line 52, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_responsive.scss */
   :root {
     --text-font-size: 1.5rem;
   }
