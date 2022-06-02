@@ -1,0 +1,54 @@
+/*Decoraciones para todos elementos de las paginas*/
+
+/*usamos MAPS para definir la Variable para los colores de los iconos de las redes*/
+$color--redes: (
+    twitter: #51aff8,
+    facebook: #2956a3,
+    instagram: #e65444,
+);
+
+#conentedor-ppal {
+
+    /*Utiliamos condicional para definir el color de fondo dependiendo de la version de la app*/
+    @if $beta_final ==beta {
+        background-color: goldenrod;
+    }
+
+    @else {
+        background: map-get($colores, fondgral);
+    }
+}
+
+/*Propiedades deco de el fondo y borde de los formularios*/
+.fondoForm {
+    background-color: map-get($colores, fondoform);
+    border: inset 10px map-get($colores, bordeform);
+    margin-top: 5px;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+/*propiedades para el texto de la Mision de la empresa*/
+.textMision {
+    /* propiedades decorativas */
+    border: solid 5px map-get($colores, bordetexto);
+    margin: 15px;
+    padding: 10px;
+}
+
+body {
+    h1 {
+        background-color: map-get($colores, fondoform);
+    }
+}
+
+/*Utilizamos un bucle para generar cada color */
+@each $red,
+$color in $color--redes {
+    .color--#{$red} {
+        color: $color;
+    }
+}

@@ -1,0 +1,47 @@
+/*Configuracion General para la estructura del html*/
+
+/*Aplicamos un reset General para el CSS*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#conentedor-ppal {
+    display: grid;
+
+    grid-template-areas: "h2top""topserv""h2nos""video""textM";
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 0.5rem;
+    margin: 5px;
+    margin-top: 10px;
+    grid-template-columns: 100%;
+}
+
+/*=========================Clases========================================*/
+
+.topServicios {
+    grid-area: topserv;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+    grid-row: 2;
+
+}
+
+.video {
+    display: grid;
+    grid-area: video;
+    justify-items: center;
+}
+
+.textMision {
+    grid-area: textM;
+
+}
+
+/* Variable para ajustar el text de acuerdo a los media queries */
+:root {
+    --text-font-size: 1rem;
+}

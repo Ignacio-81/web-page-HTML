@@ -1,0 +1,57 @@
+/*Estilos generales para los media Queries*/
+
+@media (min-width: 576px) {
+
+    #nosotros {
+        display: flex;
+        margin: 15px;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    iframe {
+        width: 480px;
+        height: 320px;
+    }
+
+    :root {
+        --text-font-size: 1.3rem;
+    }
+
+}
+
+/* Tables, notebooks y escritorio */
+@media only screen and (min-width: 1024px) {
+
+    /* DESDE 1200px */
+    #conentedor-ppal {
+        width: 98%;
+        margin: 10px;
+    }
+
+    .topServicios {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    form label {
+        padding: 5px;
+    }
+
+    form input {
+        margin: 5px;
+    }
+
+    iframe {
+
+        width: 640px;
+        height: 480px;
+    }
+
+    :root {
+        --text-font-size: 1.5rem;
+    }
+
+}
+
