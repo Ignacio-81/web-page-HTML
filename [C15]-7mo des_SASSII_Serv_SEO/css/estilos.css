@@ -17,7 +17,7 @@ el fondo general es amarillo , si es final, el fondo es blanco */
 #conentedor-ppal {
   display: grid;
   grid-template-areas: "h2top" "topserv" "h2nos" "video" "textM";
-  grid-template-rows: repeat(5, auto);
+  grid-template-rows: repeat(6, auto);
   grid-gap: 0.5rem;
   margin: 5px;
   margin-top: 10px;
@@ -25,7 +25,7 @@ el fondo general es amarillo , si es final, el fondo es blanco */
 }
 
 /*=========================Clases========================================*/
-/* line 21, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_estructura.scss */
+/* line 22, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_estructura.scss */
 .topServicios {
   grid-area: topserv;
   display: flex;
@@ -36,20 +36,20 @@ el fondo general es amarillo , si es final, el fondo es blanco */
   grid-row: 2;
 }
 
-/* line 32, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_estructura.scss */
+/* line 33, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_estructura.scss */
 .video {
   display: grid;
   grid-area: video;
   justify-items: center;
 }
 
-/* line 38, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_estructura.scss */
+/* line 39, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_estructura.scss */
 .textMision {
   grid-area: textM;
 }
 
 /* Variable para ajustar el text de acuerdo a los media queries */
-/* line 44, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_estructura.scss */
+/* line 45, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_estructura.scss */
 :root {
   --text-font-size: 1rem;
 }
@@ -58,25 +58,26 @@ el fondo general es amarillo , si es final, el fondo es blanco */
 /*usamos MAPS para definir la Variable para los colores de los iconos de las redes*/
 /* line 10, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
 #conentedor-ppal {
+  /*Utiliamos condicional para definir el color de fondo dependiendo de la version de la app*/
   background: white;
 }
 
 /*Propiedades deco de el fondo y borde de los formularios*/
-/* line 15, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
+/* line 23, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
 .fondoForm {
   background-color: #92acb6;
   border: inset 10px #71b9a3;
   margin-top: 5px;
 }
 
-/* line 21, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
+/* line 29, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
 .bi {
   vertical-align: -.125em;
   fill: currentColor;
 }
 
 /*propiedades para el texto de la Mision de la empresa*/
-/* line 26, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
+/* line 35, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
 .textMision {
   /* propiedades decorativas */
   border: solid 5px #75b775;
@@ -84,18 +85,23 @@ el fondo general es amarillo , si es final, el fondo es blanco */
   padding: 10px;
 }
 
+/* line 43, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
+body h1 {
+  background-color: #92acb6;
+}
+
 /*Utilizamos un bucle para generar cada color */
-/* line 35, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
+/* line 51, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
 .color--twitter {
   color: #51aff8;
 }
 
-/* line 35, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
+/* line 51, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
 .color--facebook {
   color: #2956a3;
 }
 
-/* line 35, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
+/* line 51, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_decoraciones.scss */
 .color--instagram {
   color: #e65444;
 }
@@ -167,33 +173,38 @@ main p {
 }
 
 /* Calculo de tamaño de los textos dependiendo del valor de la variable en lso medias queries*/
-/* line 16, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_fuentes.scss */
+/* line 15, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_fuentes.scss */
+h1 {
+  font-size: calc(1.6 * var(--text-font-size));
+}
+
+/* line 19, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_fuentes.scss */
 main h2 {
   font-size: calc(1.4 * var(--text-font-size));
 }
 
-/* line 19, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_fuentes.scss */
+/* line 22, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_fuentes.scss */
 main h2:hover {
   color: red;
 }
 
-/* line 24, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_fuentes.scss */
+/* line 27, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_fuentes.scss */
 main h3 {
   font-size: calc(1.2 * var(--text-font-size));
 }
 
-/* line 29, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_fuentes.scss */
+/* line 32, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_fuentes.scss */
 p,
 form h5 {
   font-size: calc(1 * var(--text-font-size));
 }
 
-/* line 35, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_fuentes.scss */
+/* line 38, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_fuentes.scss */
 form h4 {
   font-size: calc(1.1 * var(--text-font-size));
 }
 
-/* line 39, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_fuentes.scss */
+/* line 42, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/[C15]-7mo des_SASSII_Serv_SEO/scss/_fuentes.scss */
 form label {
   font-size: calc(0.9 * var(--text-font-size));
 }

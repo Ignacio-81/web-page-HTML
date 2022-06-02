@@ -12,6 +12,9 @@ main {
 }
 
 /* Calculo de tamaño de los textos dependiendo del valor de la variable en lso medias queries*/
+h1{
+    font-size: calc(1.6 * var(--text-font-size));
+}
 main {
     h2 {
         font-size: calc(1.4 * var(--text-font-size));
