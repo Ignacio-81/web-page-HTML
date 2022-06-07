@@ -9,8 +9,8 @@
 #conentedor-ppal {
     display: grid;
 
-    grid-template-areas: "h2top""topserv""h2nos""video""textM";
-    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "topserv""h2nos""video""textM";
+    grid-template-rows: repeat(5, auto);
     grid-gap: 0.5rem;
     margin: 5px;
     margin-top: 10px;
