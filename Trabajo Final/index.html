@@ -156,7 +156,7 @@
             <!--INICIO Formulario  Contacto-->
             <div id="contacto">
                 <h2 class="line-1 anim-typewriter">Escribinos...</h2>
-                <form class="row g-2 fondoForm">
+                <form class="row g-2 fondoForm" action="mail.php" method="POST">
                     <h4 class="mb-1">Datos Personales:</h4>
                     <div class="col-md-6">
                         <label for="inputNombre" class="form-label">Nombre:</label>
@@ -199,7 +199,9 @@
                     </div>
                     <div class="col-12 d-flex justify-content-end">
                         <button type="reset" class="btn btn-primary">Limpiar Formulario</button>
-                        <button type="submit" class="btn btn-success">Enviar</button>
+                        <button type="submit" class="btn btn-success" >
+                            Enviar
+                        </button>
                     </div>
                 </form>
             </div>

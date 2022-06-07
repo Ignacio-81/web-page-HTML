@@ -7,7 +7,7 @@ $color--redes: (
     instagram: #e65444,
 );
 
-#conentedor-ppal {
+#contenedor-ppal {
 
     /*Utiliamos condicional para definir el color de fondo dependiendo de la version de la app*/
     @if $beta_final ==beta {
@@ -23,7 +23,7 @@ $color--redes: (
 .fondoForm {
     background-color: map-get($colores, fondoform);
     border: inset 10px map-get($colores, bordeform);
-    margin-top: 5px;
+    margin: 3px;
 }
 
 .bi {

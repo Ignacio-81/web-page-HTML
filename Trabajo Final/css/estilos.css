@@ -57,9 +57,9 @@ el fondo general es amarillo , si es final, el fondo es blanco */
 /*Decoraciones para todos elementos de las paginas*/
 /*usamos MAPS para definir la Variable para los colores de los iconos de las redes*/
 /* line 10, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
-#conentedor-ppal {
+#contenedor-ppal {
   /*Utiliamos condicional para definir el color de fondo dependiendo de la version de la app*/
-  background: white;
+  background: rgba(120, 118, 118, 0.888);
 }
 
 /*Propiedades deco de el fondo y borde de los formularios*/
@@ -67,7 +67,7 @@ el fondo general es amarillo , si es final, el fondo es blanco */
 .fondoForm {
   background-color: #92acb6;
   border: inset 10px #71b9a3;
-  margin-top: 5px;
+  margin: 3px;
 }
 
 /* line 29, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
@@ -148,12 +148,16 @@ body h1 {
   form input {
     margin: 5px;
   }
-  /* line 46, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
+  /* line 45, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
+  .fondoform {
+    margin: 8px;
+  }
+  /* line 48, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
   iframe {
     width: 640px;
     height: 480px;
   }
-  /* line 52, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
+  /* line 54, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
   :root {
     --text-font-size: 1.5rem;
   }
@@ -167,44 +171,44 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 9, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
+/* line 10, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
 main p {
   font-family: 'Lobster', cursive;
 }
 
 /* Calculo de tamaño de los textos dependiendo del valor de la variable en lso medias queries*/
-/* line 15, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
+/* line 16, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
 h1 {
   font-size: calc(1.6 * var(--text-font-size));
 }
 
-/* line 19, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
+/* line 20, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
 main h2 {
   font-size: calc(1.4 * var(--text-font-size));
 }
 
-/* line 22, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
+/* line 23, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
 main h2:hover {
   color: #00ff44;
 }
 
-/* line 27, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
+/* line 28, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
 main h3 {
   font-size: calc(1.2 * var(--text-font-size));
 }
 
-/* line 32, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
+/* line 33, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
 p,
 form h5 {
   font-size: calc(1 * var(--text-font-size));
 }
 
-/* line 38, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
+/* line 39, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
 form h4 {
   font-size: calc(1.1 * var(--text-font-size));
 }
 
-/* line 42, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
+/* line 43, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
 form label {
   font-size: calc(0.9 * var(--text-font-size));
 }
