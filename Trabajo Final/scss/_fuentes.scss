@@ -32,15 +32,15 @@ main {
 
 p,
 form h5 {
-    font-size: calc(1 * var(--text-font-size));
+    font-size: calc(0.9 * var(--text-font-size));
 }
 
 form {
     h4 {
-        font-size: calc(1.1 * var(--text-font-size));
+        font-size: calc(1 * var(--text-font-size));
     }
 
     label {
-        font-size: calc(0.9 * var(--text-font-size));
+        font-size: calc(0.8 * var(--text-font-size));
     }
 }
