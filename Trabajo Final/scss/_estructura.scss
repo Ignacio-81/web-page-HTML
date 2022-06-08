@@ -9,9 +9,10 @@
 #conentedor-ppal {
     display: grid;
 
-    grid-template-areas: "topserv""h2nos""video""textM";
+    grid-template-areas: "h2top" "topserv" "h2nos" "video" "textM";
     grid-template-rows: repeat(5, auto);
     grid-gap: 0.5rem;
+
     margin: 5px;
     margin-top: 10px;
     grid-template-columns: 100%;
@@ -19,6 +20,12 @@
 
 /*=========================Clases========================================*/
 
+.titulo_top{
+    display: grid;
+    grid-area: h2top;
+    grid-row: 1;
+
+}
 .topServicios {
     grid-area: topserv;
     display: flex;
@@ -40,6 +47,7 @@
     grid-area: textM;
 
 }
+
 
 /* Variable para ajustar el text de acuerdo a los media queries */
 :root {
