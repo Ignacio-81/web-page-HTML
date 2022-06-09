@@ -9,7 +9,7 @@
 #conentedor-ppal {
     display: grid;
 
-    grid-template-areas: "h2top" "topserv" "h2nos" "video" "textM";
+    grid-template-areas: "carr" "h2top" "topserv" "h2nos" "video" "textM";
     grid-template-rows: repeat(5, auto);
     grid-gap: 0.5rem;
 
@@ -19,11 +19,16 @@
 }
 
 /*=========================Clases========================================*/
+.myCarousel{
+    display: grid;
+    grid-area: carr;
+    grid-row: 1;
+}
 
 .titulo_top{
     display: grid;
     grid-area: h2top;
-    grid-row: 1;
+    grid-row: 2;
 
 }
 .topServicios {
@@ -33,7 +38,7 @@
     gap: 10px;
     justify-content: center;
     margin-top: 10px;
-    grid-row: 2;
+    grid-row: 3;
 
 }
 

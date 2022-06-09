@@ -16,7 +16,7 @@ el fondo general es amarillo , si es final, el fondo es blanco */
 /* line 9, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
 #conentedor-ppal {
   display: grid;
-  grid-template-areas: "h2top" "topserv" "h2nos" "video" "textM";
+  grid-template-areas: "carr" "h2top" "topserv" "h2nos" "video" "textM";
   grid-template-rows: repeat(5, auto);
   grid-gap: 0.5rem;
   margin: 5px;
@@ -25,14 +25,21 @@ el fondo general es amarillo , si es final, el fondo es blanco */
 }
 
 /*=========================Clases========================================*/
-/* line 23, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
-.titulo_top {
+/* line 22, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
+.myCarousel {
   display: grid;
-  grid-area: h2top;
+  grid-area: carr;
   grid-row: 1;
 }
 
-/* line 29, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
+/* line 28, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
+.titulo_top {
+  display: grid;
+  grid-area: h2top;
+  grid-row: 2;
+}
+
+/* line 34, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
 .topServicios {
   grid-area: topserv;
   display: flex;
@@ -40,23 +47,23 @@ el fondo general es amarillo , si es final, el fondo es blanco */
   gap: 10px;
   justify-content: center;
   margin-top: 10px;
-  grid-row: 2;
+  grid-row: 3;
 }
 
-/* line 40, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
+/* line 45, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
 .video {
   display: grid;
   grid-area: video;
   justify-items: center;
 }
 
-/* line 46, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
+/* line 51, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
 .textMision {
   grid-area: textM;
 }
 
 /* Variable para ajustar el text de acuerdo a los media queries */
-/* line 53, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
+/* line 58, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
 :root {
   --text-font-size: 1rem;
 }
@@ -180,7 +187,7 @@ body {
 }
 
 /* line 9, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
-main p {
+.textMision p {
   font-family: 'Lobster', cursive;
 }
 
