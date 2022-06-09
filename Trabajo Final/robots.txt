@@ -4,4 +4,4 @@ Disallow: /
 User-agent: *
 Allow: /
 
-Sitemap: http://www.example.com/sitemap.xml
+Sitemap: https://ignacio-81.github.io/Service_Pal/Trabajo Final/sitemap.xml
