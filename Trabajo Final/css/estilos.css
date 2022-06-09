@@ -16,8 +16,8 @@ el fondo general es amarillo , si es final, el fondo es blanco */
 /* line 9, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
 #conentedor-ppal {
   display: grid;
-  grid-template-areas: "h2top" "topserv" "h2nos" "video" "textM";
-  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "carr" "h2top" "topserv" "h2nos" "video" "textM";
+  grid-template-rows: repeat(5, auto);
   grid-gap: 0.5rem;
   margin: 5px;
   margin-top: 10px;
@@ -26,6 +26,20 @@ el fondo general es amarillo , si es final, el fondo es blanco */
 
 /*=========================Clases========================================*/
 /* line 22, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
+.myCarousel {
+  display: grid;
+  grid-area: carr;
+  grid-row: 1;
+}
+
+/* line 28, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
+.titulo_top {
+  display: grid;
+  grid-area: h2top;
+  grid-row: 2;
+}
+
+/* line 34, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
 .topServicios {
   grid-area: topserv;
   display: flex;
@@ -33,23 +47,23 @@ el fondo general es amarillo , si es final, el fondo es blanco */
   gap: 10px;
   justify-content: center;
   margin-top: 10px;
-  grid-row: 2;
+  grid-row: 3;
 }
 
-/* line 33, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
+/* line 45, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
 .video {
   display: grid;
   grid-area: video;
   justify-items: center;
 }
 
-/* line 39, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
+/* line 51, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
 .textMision {
   grid-area: textM;
 }
 
 /* Variable para ajustar el text de acuerdo a los media queries */
-/* line 45, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
+/* line 58, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
 :root {
   --text-font-size: 1rem;
 }
@@ -62,22 +76,33 @@ el fondo general es amarillo , si es final, el fondo es blanco */
   background: rgba(120, 118, 118, 0.888);
 }
 
+/*Propiedades del carrousel */
+/* line 22, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
+.carousel-texto {
+  background-color: rgba(248, 248, 255, 0.704);
+}
+
+/* line 25, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
+.c-c_italic {
+  font-style: italic;
+}
+
 /*Propiedades deco de el fondo y borde de los formularios*/
-/* line 23, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
+/* line 30, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
 .fondoForm {
   background-color: #92acb6;
   border: inset 10px #71b9a3;
   margin: 3px;
 }
 
-/* line 29, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
+/* line 36, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
 .bi {
   vertical-align: -.125em;
   fill: currentColor;
 }
 
 /*propiedades para el texto de la Mision de la empresa*/
-/* line 35, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
+/* line 42, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
 .textMision {
   /* propiedades decorativas */
   border: solid 5px #75b775;
@@ -85,23 +110,18 @@ el fondo general es amarillo , si es final, el fondo es blanco */
   padding: 10px;
 }
 
-/* line 43, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
-body h1 {
-  background-color: #92acb6;
-}
-
 /*Utilizamos un bucle para generar cada color */
-/* line 51, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
+/* line 52, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
 .color--twitter {
   color: #51aff8;
 }
 
-/* line 51, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
+/* line 52, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
 .color--facebook {
   color: #2956a3;
 }
 
-/* line 51, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
+/* line 52, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
 .color--instagram {
   color: #e65444;
 }
@@ -164,15 +184,14 @@ body h1 {
 }
 
 /* Estilos generales para las fuentes*/
-/* line 2, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
+/* line 3, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
 body {
   font-size: 1rem;
-  overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 10, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
-main p {
+/* line 9, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
+.textMision p {
   font-family: 'Lobster', cursive;
 }
 

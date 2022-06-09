@@ -18,6 +18,13 @@ $color--redes: (
         background: map-get($colores, fondgral);
     }
 }
+/*Propiedades del carrousel */
+.carousel-texto{
+    background-color: rgba(248, 248, 255, 0.704);
+}
+.c-c_italic{
+    font-style: italic;
+}
 
 /*Propiedades deco de el fondo y borde de los formularios*/
 .fondoForm {
@@ -37,12 +44,6 @@ $color--redes: (
     border: solid 5px map-get($colores, bordetexto);
     margin: 15px;
     padding: 10px;
-}
-
-body {
-    h1 {
-        background-color: map-get($colores, fondoform);
-    }
 }
 
 /*Utilizamos un bucle para generar cada color */
