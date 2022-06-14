@@ -14,7 +14,7 @@ el fondo general es amarillo , si es final, el fondo es blanco */
 }
 
 /* line 9, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
-#conentedor-ppal {
+#contenedorPpal {
   display: grid;
   grid-template-areas: "carr" "h2top" "topserv" "h2nos" "video" "textM";
   grid-template-rows: repeat(5, auto);
@@ -62,14 +62,15 @@ el fondo general es amarillo , si es final, el fondo es blanco */
   grid-area: textM;
 }
 
-/* line 55, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
+/*Se modifica la clase de BS */
+/* line 56, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
 .accordion-body {
   margin: 0px;
   padding: 1px;
 }
 
 /* Variable para ajustar el text de acuerdo a los media queries */
-/* line 61, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
+/* line 62, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_estructura.scss */
 :root {
   --text-font-size: 1rem;
 }
@@ -77,19 +78,19 @@ el fondo general es amarillo , si es final, el fondo es blanco */
 /*Decoraciones para todos elementos de las paginas*/
 /*usamos MAPS para definir la Variable para los colores de los iconos de las redes*/
 /* line 10, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
-#contenedor-ppal {
+#contenedorPpal {
   /*Utiliamos condicional para definir el color de fondo dependiendo de la version de la app*/
   background: rgba(120, 118, 118, 0.888);
 }
 
 /*Propiedades del carrousel */
 /* line 22, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
-.carousel-texto {
+.carrTxtfondo {
   background-color: rgba(248, 248, 255, 0.704);
 }
 
 /* line 25, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
-.c-c_italic {
+.carrTxtitalic {
   font-style: italic;
 }
 
@@ -156,7 +157,7 @@ el fondo general es amarillo , si es final, el fondo es blanco */
 @media only screen and (min-width: 1024px) {
   /* DESDE 1200px */
   /* line 27, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
-  #conentedor-ppal {
+  #contenedorPpal {
     width: 98%;
     margin: 10px;
   }
@@ -178,16 +179,17 @@ el fondo general es amarillo , si es final, el fondo es blanco */
   .fondoform {
     margin: 8px;
   }
-  /* line 48, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
+  /* se modifica clase de BS*/
+  /* line 49, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
   .accordion-body {
     margin: 5px;
   }
-  /* line 51, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
+  /* line 52, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
   iframe {
     width: 640px;
     height: 480px;
   }
-  /* line 57, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
+  /* line 58, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
   :root {
     --text-font-size: 1.3rem;
   }

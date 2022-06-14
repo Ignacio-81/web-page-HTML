@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-#conentedor-ppal {
+#contenedorPpal {
     display: grid;
 
     grid-template-areas: "carr" "h2top" "topserv" "h2nos" "video" "textM";
@@ -52,6 +52,7 @@
     grid-area: textM;
 
 }
+/*Se modifica la clase de BS */
 .accordion-body{
     margin: 0px;
     padding: 1px;
