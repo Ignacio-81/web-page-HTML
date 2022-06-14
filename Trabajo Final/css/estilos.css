@@ -130,7 +130,7 @@ el fondo general es amarillo , si es final, el fondo es blanco */
 
 /* line 52, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
 .color--instagram {
-  color: #efebea;
+  color: #fd4214;
 }
 
 /*Estilos generales para los media Queries*/
@@ -166,30 +166,31 @@ el fondo general es amarillo , si es final, el fondo es blanco */
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    padding-left: 10px;
   }
-  /* line 38, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
+  /* line 39, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
   form label {
     padding: 5px;
   }
-  /* line 42, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
+  /* line 43, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
   form input {
     margin: 5px;
   }
-  /* line 45, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
+  /* line 46, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
   .fondoform {
     margin: 8px;
   }
   /* se modifica clase de BS*/
-  /* line 49, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
+  /* line 50, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
   .accordion-body {
     margin: 5px;
   }
-  /* line 52, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
+  /* line 53, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
   iframe {
     width: 640px;
     height: 480px;
   }
-  /* line 58, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
+  /* line 59, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_responsive.scss */
   :root {
     --text-font-size: 1.3rem;
   }
@@ -213,33 +214,33 @@ h1 {
   font-size: calc(1.6 * var(--text-font-size));
 }
 
-/* line 20, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
+/* line 21, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
 main h2 {
   font-size: calc(1.4 * var(--text-font-size));
 }
 
-/* line 23, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
-main h2:hover {
-  color: #00ff44;
-}
-
-/* line 28, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
+/* line 25, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
 main h3 {
   font-size: calc(1.2 * var(--text-font-size));
 }
 
-/* line 33, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
+/* line 30, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
+.cambioTxtcolor:hover {
+  color: #00ff44;
+}
+
+/* line 35, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
 p,
 form h5 {
   font-size: calc(0.9 * var(--text-font-size));
 }
 
-/* line 39, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
+/* line 41, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
 form h4 {
   font-size: calc(1 * var(--text-font-size));
 }
 
-/* line 43, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
+/* line 45, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
 form label {
   font-size: calc(0.8 * var(--text-font-size));
 }
@@ -247,12 +248,12 @@ form label {
 /* Estilos Generales para las animaciones */
 /*============================ Animacion para imagenes ==================*/
 /* line 4, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_animaciones.scss */
-.img-style:hover .caption {
+.animImagen:hover .caption {
   opacity: 1;
 }
 
 /* line 8, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_animaciones.scss */
-.img-style:hover img {
+.animImagen:hover img {
   opacity: 1;
   transform: scale(1.25, 1.25);
   -webkit-transform: scale(1.25, 1.25);
@@ -262,7 +263,7 @@ form label {
 }
 
 /* line 17, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_animaciones.scss */
-.img-style img {
+.animImagen img {
   margin: 0px;
   padding: 0px;
   float: left;
@@ -270,7 +271,7 @@ form label {
 }
 
 /* line 25, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_animaciones.scss */
-.img-style .caption {
+.animImagen .caption {
   cursor: pointer;
   position: absolute;
   opacity: 0;
@@ -282,7 +283,7 @@ form label {
 }
 
 /* line 36, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_animaciones.scss */
-.img-style img {
+.animImagen img {
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;

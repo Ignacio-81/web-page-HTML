@@ -1,11 +1,11 @@
 /* Estilos Generales para las animaciones */
 
 /*============================ Animacion para imagenes ==================*/
-.img-style:hover .caption {
+.animImagen:hover .caption {
     opacity: 1;
 }
 
-.img-style:hover img {
+.animImagen:hover img {
     opacity: 1;
     transform: scale(1.25, 1.25);
     -webkit-transform: scale(1.25, 1.25);
@@ -14,7 +14,7 @@
     -o-transform: scale(1.25, 1.25);
 }
 
-.img-style img {
+.animImagen img {
     margin: 0px;
     padding: 0px;
     float: left;
@@ -22,7 +22,7 @@
 }
 
 
-.img-style .caption {
+.animImagen .caption {
     cursor: pointer;
     position: absolute;
     opacity: 0;
@@ -33,7 +33,7 @@
     transition: all 0.45s ease-in-out;
 }
 
-.img-style img {
+.animImagen img {
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
