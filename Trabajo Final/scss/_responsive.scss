@@ -24,7 +24,7 @@
 @media only screen and (min-width: 1024px) {
 
     /* DESDE 1200px */
-    #conentedor-ppal {
+    #contenedorPpal {
         width: 98%;
         margin: 10px;
     }
@@ -33,6 +33,7 @@
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
+        padding-left: 10px;
     }
 
     form label {
@@ -45,6 +46,7 @@
     .fondoform{
         margin: 8px;
     }
+    /* se modifica clase de BS*/
     .accordion-body{
         margin: 5px;
     }
