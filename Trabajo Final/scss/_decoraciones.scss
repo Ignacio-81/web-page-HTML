@@ -7,10 +7,10 @@ $color--redes: (
     instagram: #fd4214,
 );
 
-#contenedorPpal {
+body {
 
     /*Utiliamos condicional para definir el color de fondo dependiendo de la version de la app*/
-    @if $beta_final ==beta {
+    @if $beta_final == beta {
         background-color: goldenrod;
     }
 
@@ -40,10 +40,18 @@ $color--redes: (
 
 /*propiedades para el texto de la Mision de la empresa*/
 .textMision {
-    /* propiedades decorativas */
+    background-color: rgb(214, 230, 202);
     border: solid 5px map-get($colores, bordetexto);
     margin: 15px;
     padding: 10px;
+}
+/* Propiedades del menu Acordion de Servicios*/ 
+
+.accordion-button{
+    background-color: map-get($colores, fondgral);
+}
+.accordion-body{
+    background-color: map-get($colores, fondgral);
 }
 
 /*Utilizamos un bucle para generar cada color */

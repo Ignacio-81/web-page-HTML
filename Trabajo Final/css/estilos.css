@@ -78,9 +78,9 @@ el fondo general es amarillo , si es final, el fondo es blanco */
 /*Decoraciones para todos elementos de las paginas*/
 /*usamos MAPS para definir la Variable para los colores de los iconos de las redes*/
 /* line 10, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
-#contenedorPpal {
+body {
   /*Utiliamos condicional para definir el color de fondo dependiendo de la version de la app*/
-  background: rgba(120, 118, 118, 0.888);
+  background: rgba(231, 231, 231, 0.942);
 }
 
 /*Propiedades del carrousel */
@@ -111,24 +111,35 @@ el fondo general es amarillo , si es final, el fondo es blanco */
 /*propiedades para el texto de la Mision de la empresa*/
 /* line 42, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
 .textMision {
-  /* propiedades decorativas */
+  background-color: #d6e6ca;
   border: solid 5px #75b775;
   margin: 15px;
   padding: 10px;
 }
 
+/* Propiedades del menu Acordion de Servicios*/
+/* line 50, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
+.accordion-button {
+  background-color: rgba(231, 231, 231, 0.942);
+}
+
+/* line 53, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
+.accordion-body {
+  background-color: rgba(231, 231, 231, 0.942);
+}
+
 /*Utilizamos un bucle para generar cada color */
-/* line 52, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
+/* line 60, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
 .color--twitter {
   color: #51aff8;
 }
 
-/* line 52, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
+/* line 60, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
 .color--facebook {
   color: #2956a3;
 }
 
-/* line 52, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
+/* line 60, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_decoraciones.scss */
 .color--instagram {
   color: #fd4214;
 }
@@ -229,25 +240,18 @@ main h3 {
   color: #00ff44;
 }
 
-/*
-#contacto {
-    h2{
-        display:inline;
-    }
-}
-*/
-/* line 41, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
+/* line 35, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
 p,
 form h5 {
   font-size: calc(0.9 * var(--text-font-size));
 }
 
-/* line 47, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
+/* line 41, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
 form h4 {
   font-size: calc(1 * var(--text-font-size));
 }
 
-/* line 51, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
+/* line 45, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
 form label {
   font-size: calc(0.8 * var(--text-font-size));
 }
@@ -309,7 +313,7 @@ form label {
 @keyframes hvr-pulse-grow {
   to {
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }
 
