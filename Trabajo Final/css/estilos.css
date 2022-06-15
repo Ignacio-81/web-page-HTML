@@ -229,18 +229,25 @@ main h3 {
   color: #00ff44;
 }
 
-/* line 35, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
+/*
+#contacto {
+    h2{
+        display:inline;
+    }
+}
+*/
+/* line 41, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
 p,
 form h5 {
   font-size: calc(0.9 * var(--text-font-size));
 }
 
-/* line 41, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
+/* line 47, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
 form h4 {
   font-size: calc(1 * var(--text-font-size));
 }
 
-/* line 45, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
+/* line 51, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_fuentes.scss */
 form label {
   font-size: calc(0.8 * var(--text-font-size));
 }
@@ -340,15 +347,15 @@ form label {
 /* Animacion del text "escribinos"================================== */
 /* line 88, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_animaciones.scss */
 .anim-typewriter {
-  animation: typewriter 4s steps(25) 1s infinite normal both, blinkTextCursor 500ms steps(10) infinite normal;
+  animation: typewriter 2s steps(25) 1s infinite normal both, blinkTextCursor 500ms steps(10) infinite normal;
 }
 
 @keyframes typewriter {
   from {
-    width: 0;
+    width: 5em;
   }
   to {
-    width: 6em;
+    width: 7em;
   }
 }
 

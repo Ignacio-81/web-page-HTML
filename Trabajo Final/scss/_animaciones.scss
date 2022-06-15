@@ -86,17 +86,17 @@
 }
 /* Animacion del text "escribinos"================================== */
 .anim-typewriter {
-    animation: typewriter 4s steps(25) 1s infinite normal both,
+    animation: typewriter 2s steps(25) 1s infinite normal both,
         blinkTextCursor 500ms steps(10) infinite normal;
 }
 
 @keyframes typewriter {
     from {
-        width: 0;
+        width: 5em;
     }
 
     to {
-        width: 6em;
+        width: 7em;
     }
 }
 
