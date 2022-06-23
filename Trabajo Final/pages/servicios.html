@@ -21,6 +21,7 @@
 </head>
 
 <body>
+    <!--Imagenes Redes con formato SVG-->
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="bootstrap" viewBox="0 0 118 94">
             <title>Bootstrap</title>
@@ -44,6 +45,7 @@
             </path>
         </symbol>
     </svg>
+    <!--INICIO COntenedor Barra Navegacion-->
     <div class="container-fluid">
         <!-- Encabezado-->
         <header class="navbar navbar-light">
@@ -90,7 +92,8 @@
         </nav>
 
     </div>
-    <!--Fin Encabezado-->
+    <!--FIN Contenedor Barra Navegacion-->
+    <!--Inicio cuerpo principal-->
     <main>
         <!--inicio Hero-->
         <div class="px-3 py-3 text-center">
@@ -120,37 +123,44 @@
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                     data-bs-parent="#accordion1">
                     <div class="accordion-body">
-                        <form class="row g-3 fondoForm">
-                            <div class="col-12 col-md-6">
-                                <label for="inputNombre" class="form-label">Tipo de Servicio:</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Seleccione el servicio</option>
-                                    <option value="todos">Todos</option>
-                                    <option value="Elec">Electricidad</option>
-                                    <option value="Plom">Plomeria</option>
-                                    <option value="Install">Instaladores</option>
-                                    <option value="jard">Jardineria</option>
-                                    <option value="cadeteria">Cadeteria</option>
-                                    <option value="otro">Otros</option>
-                                </select>
-                            </div>
-                            <div class="ccol-12 col-md-6">
-                                <label for="inputciudad" class="form-label">Ciudad:</label>
-                                <input type="text" class="form-control" id="inputciudad">
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <label for="inputlocalidad" class="form-label">Localidad:</label>
-                                <input type="text" class="form-control" id="inputlocalidad">
-
-                                <label for="inputprov" class="form-label">Provincia:</label>
-                                <input type="text" class="form-control" id="inputprov">
-                            </div>
-                            <hr class="my-1 mb-1">
-                            <div class="gap-3 d-flex justify-content-end">
-                                <button type="reset" class="btn btn-primary">Limpiar Formulario</button>
-                                <button type="submit" class="btn btn-success">Enviar</button>
-                            </div>
-                        </form>
+                        <div class="row justify-content-md-center py-2 px-2">
+                            <form class="fondoForm col-md-8 col-lg-8">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <label for="inputNombre" class="form-label">Tipo de Servicio:</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Seleccione el servicio</option>
+                                            <option value="todos">Todos</option>
+                                            <option value="Elec">Electricidad</option>
+                                            <option value="Plom">Plomeria</option>
+                                            <option value="Install">Instaladores</option>
+                                            <option value="jard">Jardineria</option>
+                                            <option value="cadeteria">Cadeteria</option>
+                                            <option value="otro">Otros</option>
+                                        </select>
+                                    </div>
+                                    <div class="ccol-12 col-md-6">
+                                        <label for="inputciudad" class="form-label">Ciudad:</label>
+                                        <input type="text" class="form-control" id="inputciudad">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <label for="inputlocalidad" class="form-label">Localidad:</label>
+                                        <input type="text" class="form-control" id="inputlocalidad">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="inputprov" class="form-label">Provincia:</label>
+                                        <input type="text" class="form-control" id="inputprov">
+                                    </div>
+                                </div>
+                                <hr class="my-1 mb-1">
+                                <div class="gap-3 d-flex justify-content-end">
+                                    <button type="reset" class="btn btn-primary">Limpiar Formulario</button>
+                                    <button type="submit" class="btn btn-success">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -215,65 +225,74 @@
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                     data-bs-parent="#accordion1">
                     <div class="accordion-body">
-                        <div>
-                            <form class="row g-3 fondoForm">
-
-                                <div class="col-12 col-md-6">
-                                    <label for="inputNombre" class="form-label">Nombre:</label>
-                                    <input type="text" class="form-control" id="inputNombre">
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <label for="inputApellido" class="form-label">Apellido:</label>
-                                    <input type="text" class="form-control" id="inputApellido">
-                                </div>
-                                <div class="col-12 col-md-6 needs-validation was-validated" novalidate>
-                                    <label for="inputEmail" class="form-label">E-mail:</label>
-                                    <input type="email" class="form-control" id="inputEmail"
-                                        placeholder="example@mail.com">
-                                    <div class="invalid-feedback">
-                                        Por favor ingrese un e-mail válido (ejemplo@mail.com)
+                        <div class="row justify-content-md-center py-2 px-2">
+                            <form class="fondoForm col-md-8 col-lg-8">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <label for="inputNombre" class="form-label">Nombre:</label>
+                                        <input type="text" class="form-control" id="inputNombre">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="inputApellido" class="form-label">Apellido:</label>
+                                        <input type="text" class="form-control" id="inputApellido">
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-12">
-                                    <label for="inputtelefono" class="form-label">Telefono:</label>
-                                    <input type="text" class="form-control" id="inputtelefono">
-                                </div>
-                                <div class="col-md-5 col-8">
-                                    <label for="inputNombre" class="form-label">Tipo de Servicio:</label>
-                                    <select class="form-select" aria-label="Default select example" type="button">
-                                        <option selected>Seleccione el servicio</option>
-                                        <option value="todos">Todos</option>
-                                        <option value="Elec">Electricidad</option>
-                                        <option value="Plom">Plomeria</option>
-                                        <option value="Install">Instaladores</option>
-                                        <option value="jard">Jardineria</option>
-                                        <option value="cadeteria">Cadeteria</option>
-                                        <option value="otro">
-
-                                            Otro
-                                        </option>
-
-                                    </select>
-                                    <div class="col-12 col-md-6">
-                                        <label for="inputotro" class="form-label">Otro:</label>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 needs-validation was-validated" novalidate>
+                                        <label for="inputEmail" class="form-label">E-mail:</label>
+                                        <input type="email" class="form-control" id="inputEmail"
+                                            placeholder="example@mail.com">
+                                        <div class="invalid-feedback">
+                                            Por favor ingrese un e-mail válido (ejemplo@mail.com)
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-12">
+                                        <label for="inputtelefono" class="form-label">Telefono:</label>
                                         <input type="text" class="form-control" id="inputtelefono">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5 col-8">
+                                        <label for="inputNombre" class="form-label">Tipo de Servicio:</label>
+                                        <select class="form-select" aria-label="Default select example" type="button">
+                                            <option selected>Seleccione el servicio</option>
+                                            <option value="todos">Todos</option>
+                                            <option value="Elec">Electricidad</option>
+                                            <option value="Plom">Plomeria</option>
+                                            <option value="Install">Instaladores</option>
+                                            <option value="jard">Jardineria</option>
+                                            <option value="cadeteria">Cadeteria</option>
+                                            <option value="otro">
+
+                                                Otro
+                                            </option>
+
+                                        </select>
+                                        <div class="col-12 col-md-6">
+                                            <label for="inputotro" class="form-label">Otro:</label>
+                                            <input type="text" class="form-control" id="inputtelefono">
+                                        </div>
                                     </div>
                                 </div>
                                 <hr class="my-3 mb-1">
                                 <h3>Datos Adicionales:</h3>
-                                <div class="col-12 col-sm-6">
-                                    <label for="inpudireccion" class="form-label">Direccion:</label>
-                                    <input type="text" class="form-control" id="inpudireccion">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <label for="inpudireccion" class="form-label">Direccion:</label>
+                                        <input type="text" class="form-control" id="inpudireccion">
 
-                                    <label for="inputciudad" class="form-label">Ciudad:</label>
-                                    <input type="text" class="form-control" id="inputciudad">
+                                        <label for="inputciudad" class="form-label">Ciudad:</label>
+                                        <input type="text" class="form-control" id="inputciudad">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="inputlocalidad" class="form-label">Localidad:</label>
+                                        <input type="text" class="form-control" id="inputlocalidad">
 
-                                    <label for="inputlocalidad" class="form-label">Localidad:</label>
-                                    <input type="text" class="form-control" id="inputlocalidad">
-
-                                    <label for="inputprov" class="form-label">Provincia:</label>
-                                    <input type="text" class="form-control" id="inputprov">
+                                        <label for="inputprov" class="form-label">Provincia:</label>
+                                        <input type="text" class="form-control" id="inputprov">
+                                    </div>
                                 </div>
+
                                 <div class="col-12">
                                     <label for="inputprov" class="form-label">Datos Adicionales:</label>
                                     <textarea class="form-control" placeholder="Escriba aqui..." id="Textarea"

@@ -23,7 +23,7 @@
 </head>
 
 <body>
-
+    <!--Imagenes Redes con formato SVG-->
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="bootstrap" viewBox="0 0 118 94">
             <title>Bootstrap</title>
@@ -47,6 +47,7 @@
             </path>
         </symbol>
     </svg>
+    <!--INICIO COntenedor Barra Navegacion-->
     <div class="container-fluid">
         <!-- Encabezado-->
         <header class="navbar navbar-light">
@@ -94,7 +95,7 @@
             </div>
         </nav>
     </div>
-
+    <!--FIN Contenedor Barra Navegacion-->
     <!--Inicio cuerpo principal-->
     <main>
         <div class="contenedorPpal">
@@ -222,7 +223,8 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
-                <div class="textMision hvr-pulse-grow">
+                <!--<div class="textMision hvr-pulse-grow">-->
+                <div class="textMision">
                     <!--Columna 2-->
                     <h3>Nuestra misión:</h3>
                     <p>Nos especializamos en conectar personas con personas (Servicio P2P). A traves de nuestra Web,
@@ -249,7 +251,6 @@
                     <div class="card shadow-sm">
                         <img class="d-block w-100" alt="foto de feria de construcción" src="assets/img/feria.jpg"
                             style="max-height:320px;min-height:180px !important;" focusable="false">
-
 
                         <div class="card-body">
                             <p class="card-text">Conocé las nuevas tendencias en la Expo Construccion Argentina 2022</p>
@@ -281,7 +282,6 @@
                     <div class="card shadow-sm">
                         <img class="d-block w-100" alt="foto edificios" src="assets/img/procrear.JPG"
                             style="max-height:520px;min-height:180px !important;" focusable="false">
-
 
                         <div class="card-body">
                             <p class="card-text">Nueva convocatoria a Procrear, aprovecha para verificar los locales
@@ -332,58 +332,61 @@
                         <h2 class="line-1 anim-typewriter cambioTxtcolor">Escribinos . . . .</h2>
                     </div>
                 </div>
+                <div class="container">
+                    <div class="row justify-content-md-center py-2 px-2">
+                        <form class="fondoForm col-md-8 col-lg-8">
+                            <h4 class="mb-1">Datos Personales:</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="inputNombre" class="form-label">Nombre:</label>
+                                    <input type="text" class="form-control" id="inputNombre">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputApellido" class="form-label">Apellido:</label>
+                                    <input type="text" class="form-control" id="inputApellido">
+                                </div>
+                            </div>
+                            <div class="col-12 needs-validation was-validated" novalidate>
+                                <label for="inputEmail" class="form-label">E-mail:</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="example@mail.com">
+                                <div class="invalid-feedback">
+                                    Por favor ingrese un e-mail válido (ejemplo@mail.com)
+                                </div>
+                            </div>
+                            <hr class="my-3 mb-1">
+                            <h5 class="mb-1">Seleccione Tipo:</h5>
+                            <div class="my-3">
+                                <div class="form-check">
+                                    <input id="proveedor" name="tipo" type="radio" class="form-check-input" required="">
+                                    <label class="form-check-label" for="proveedor">Proveedor</label>
+                                </div>
+                                <div class="form-check">
+                                    <input id="cliente" name="tipo" type="radio" class="form-check-input" required="">
+                                    <label class="form-check-label" for="cliente">Cliente</label>
+                                </div>
+                            </div>
+                            <h5 class="mb-1">Comentarios:</h5>
+                            <textarea class="form-control" placeholder="Escriba aqui..." id="Textarea"
+                                style="height: 100px"></textarea>
 
-                <form class="row g-2 fondoForm">
-                    <h4 class="mb-1">Datos Personales:</h4>
-                    <div class="col-md-6">
-                        <label for="inputNombre" class="form-label">Nombre:</label>
-                        <input type="text" class="form-control" id="inputNombre">
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Acepte los terminos
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 gap-3 d-flex justify-content-end">
+                                <button type="reset" class="btn btn-primary">Limpiar Formulario</button>
+                                <button type="submit" class="btn btn-success">Enviar</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="col-md-6">
-                        <label for="inputApellido" class="form-label">Apellido:</label>
-                        <input type="text" class="form-control" id="inputApellido">
-                    </div>
-                    <div class="col-12 needs-validation was-validated" novalidate>
-                        <label for="inputEmail" class="form-label">E-mail:</label>
-                        <input type="email" class="form-control" id="inputEmail" placeholder="example@mail.com">
-                        <div class="invalid-feedback">
-                            Por favor ingrese un e-mail válido (ejemplo@mail.com)
-                        </div>
-                    </div>
-                    <hr class="my-3 mb-1">
-                    <h5 class="mb-1">Seleccione Tipo:</h5>
-                    <div class="my-3">
-                        <div class="form-check">
-                            <input id="proveedor" name="tipo" type="radio" class="form-check-input" required="">
-                            <label class="form-check-label" for="proveedor">Proveedor</label>
-                        </div>
-                        <div class="form-check">
-                            <input id="cliente" name="tipo" type="radio" class="form-check-input" required="">
-                            <label class="form-check-label" for="cliente">Cliente</label>
-                        </div>
-                    </div>
-                    <h5 class="mb-1">Comentarios:</h5>
-                    <textarea class="form-control" placeholder="Escriba aqui..." id="Textarea"
-                        style="height: 100px"></textarea>
-
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                                Acepte los terminos
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-12 gap-3 d-flex justify-content-end">
-                        <button type="reset" class="btn btn-primary">Limpiar Formulario</button>
-                        <button type="submit" class="btn btn-success">Enviar</button>
-                    </div>
-                </form>
+                </div>
             </div>
-
             <!--Fin Formulario-->
         </div>
-
         <!--FIN Contenedor general-->
 
     </main>

@@ -30,7 +30,7 @@ body {
 .fondoForm {
     background-color: map-get($colores, fondoform);
     border: inset 10px map-get($colores, bordeform);
-    margin: 3px;
+    /*margin: 3px;*/
 }
 
 .bi {
@@ -40,8 +40,8 @@ body {
 
 /*propiedades para el texto de la Mision de la empresa*/
 .textMision {
-    background-color: rgb(214, 230, 202);
-    border: solid 5px map-get($colores, bordetexto);
+    /*background-color: rgb(214, 230, 202);
+    border: solid 5px map-get($colores, bordetexto);*/
     margin: 15px;
     padding: 10px;
 }
