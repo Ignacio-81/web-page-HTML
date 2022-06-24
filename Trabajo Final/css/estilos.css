@@ -338,6 +338,7 @@ form label {
   animation-direction: alternate;
 }
 
+/* Animacion del text "escribinos"================================== */
 /* line 77, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_animaciones.scss */
 .line-1 {
   display: flex;
@@ -350,7 +351,6 @@ form label {
   justify-content: left;
 }
 
-/* Animacion del text "escribinos"================================== */
 /* line 88, D:/Personal/CoderHouse/Desarrollo Web/_PROYECTOS/Repo/Trabajo Final/scss/_animaciones.scss */
 .anim-typewriter {
   animation: typewriter 2s steps(25) 1s infinite normal both, blinkTextCursor 500ms steps(10) infinite normal;

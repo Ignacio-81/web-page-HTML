@@ -73,7 +73,7 @@
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
 }
-
+/* Animacion del text "escribinos"================================== */
 .line-1{
     display: flex;
     align-items:flex-start;
@@ -84,7 +84,7 @@
     margin: 0 left;
     justify-content: left;   
 }
-/* Animacion del text "escribinos"================================== */
+
 .anim-typewriter {
     animation: typewriter 2s steps(25) 1s infinite normal both,
         blinkTextCursor 500ms steps(10) infinite normal;
