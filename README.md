@@ -1,3 +1,3 @@
-# Este Trabajo es el desarrollado dentro del curso de Desarrollo Web de CoderHouse
+# This is a service web page Project 
 # Service_Pal
-Trabjo Final con todas las configuraciones y entrega final del curso
+HTML
